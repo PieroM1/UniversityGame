@@ -79,7 +79,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
@@ -160,19 +160,19 @@ TextureImporter:
       name: Idle 0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 34
-        width: 16
+        width: 13
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cdaeb1cfe61586a0800000000000000
+      spriteID: 558258431ae9b6348843e22a761fb510
       internalID: -6447722072507503168
       vertices: []
       indices: 
@@ -182,19 +182,19 @@ TextureImporter:
       name: Idle 1
       rect:
         serializedVersion: 2
-        x: 17
+        x: 18
         y: 34
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31f91de0f9c3b1920800000000000000
+      spriteID: 9af051e5ea809f849aead044a1531f01
       internalID: 2962027833772318483
       vertices: []
       indices: 
@@ -204,19 +204,19 @@ TextureImporter:
       name: Run 0
       rect:
         serializedVersion: 2
-        x: 34
+        x: 35
         y: 34
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7879492f2a374fdd0800000000000000
+      spriteID: be0d8079413a0fb4c907d14a4c9634f8
       internalID: -2453208753318357113
       vertices: []
       indices: 
@@ -226,19 +226,19 @@ TextureImporter:
       name: Run 1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 17
-        width: 16
+        width: 13
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b94b05d738f6b1850800000000000000
+      spriteID: 6902d0b94cd88d64c9006894e37ab9fb
       internalID: 6348790710242686107
       vertices: []
       indices: 
@@ -248,19 +248,19 @@ TextureImporter:
       name: Run 2
       rect:
         serializedVersion: 2
-        x: 17
+        x: 18
         y: 17
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 13
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac6f31c157c558c40800000000000000
+      spriteID: 2b808f5a8e92bce4889a79ff178b7225
       internalID: 5513914976837039818
       vertices: []
       indices: 
@@ -270,19 +270,19 @@ TextureImporter:
       name: Run 3
       rect:
         serializedVersion: 2
-        x: 34
+        x: 35
         y: 17
-        width: 16
+        width: 13
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09905f9bea8b7f9f0800000000000000
+      spriteID: 2dd959c60f81b904cbdef4693a229bc5
       internalID: -434675778434299504
       vertices: []
       indices: 
@@ -292,19 +292,19 @@ TextureImporter:
       name: Jump 0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 16
+        width: 13
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01f0e1a4e032a00b0800000000000000
+      spriteID: 766ba3cbaef832043814d7f5baa5ffff
       internalID: -5761754228987130096
       vertices: []
       indices: 
@@ -314,19 +314,19 @@ TextureImporter:
       name: Jump 1
       rect:
         serializedVersion: 2
-        x: 17
+        x: 18
         y: 0
-        width: 16
+        width: 13
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea821723e862df150800000000000000
+      spriteID: 3d9340b7f5e2de646b9158501bb1558f
       internalID: 5907920678353447086
       vertices: []
       indices: 
@@ -336,19 +336,19 @@ TextureImporter:
       name: Jump 2
       rect:
         serializedVersion: 2
-        x: 34
+        x: 35
         y: 0
-        width: 16
+        width: 13
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fd82f29ed60a8ba0800000000000000
+      spriteID: 26ee1b9dee5b26947b041987e02717ff
       internalID: -6086044393419928071
       vertices: []
       indices: 
@@ -366,7 +366,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Idle 0: -6447722072507503168
       Idle 1: 2962027833772318483
