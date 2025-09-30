@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 747327766}
   m_Layer: 0
   m_Name: Jugador
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -419,6 +419,63 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &828955341
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 190687583197397486, guid: 141cef9d5227684439e6c24812858262, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5532146
+      objectReference: {fileID: 0}
+    - target: {fileID: 190687583197397486, guid: 141cef9d5227684439e6c24812858262, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.194565
+      objectReference: {fileID: 0}
+    - target: {fileID: 190687583197397486, guid: 141cef9d5227684439e6c24812858262, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190687583197397486, guid: 141cef9d5227684439e6c24812858262, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 190687583197397486, guid: 141cef9d5227684439e6c24812858262, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190687583197397486, guid: 141cef9d5227684439e6c24812858262, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190687583197397486, guid: 141cef9d5227684439e6c24812858262, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190687583197397486, guid: 141cef9d5227684439e6c24812858262, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190687583197397486, guid: 141cef9d5227684439e6c24812858262, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 190687583197397486, guid: 141cef9d5227684439e6c24812858262, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7316156575857887536, guid: 141cef9d5227684439e6c24812858262, type: 3}
+      propertyPath: m_Name
+      value: Emerald_Blue
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 141cef9d5227684439e6c24812858262, type: 3}
 --- !u!1 &1082106796
 GameObject:
   m_ObjectHideFlags: 0
@@ -6820,3 +6877,4 @@ SceneRoots:
   - {fileID: 747327765}
   - {fileID: 743826904}
   - {fileID: 1787361615}
+  - {fileID: 828955341}
