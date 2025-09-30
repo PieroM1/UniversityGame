@@ -1,41 +1,31 @@
 fileFormatVersion: 2
-guid: 10f3cacccb0c4c547be76836eba20664
-AssetOrigin:
-  serializedVersion: 1
-  productId: 188518
-  packageName: Simple 2D Platformer Assets Pack
-  packageVersion: 1.0
-  assetPath: Assets/Simple 2D Platformer BE2/Sprites/Player.png
-  uploadId: 417220
+guid: 95f997a180c20604fb59bf87d686dc30
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6447722072507503168
-    second: Idle 0
+      213: 6691146932001021148
+    second: Emeralds_0
   - first:
-      213: 2962027833772318483
-    second: Idle 1
+      213: 4553176475144245809
+    second: Emeralds_1
   - first:
-      213: -2453208753318357113
-    second: Run 0
+      213: -2149142082637963770
+    second: Emeralds_2
   - first:
-      213: 6348790710242686107
-    second: Run 1
+      213: -5256302112247196321
+    second: Emeralds_3
   - first:
-      213: 5513914976837039818
-    second: Run 2
+      213: -956949848106417635
+    second: Emeralds_4
   - first:
-      213: -434675778434299504
-    second: Run 3
+      213: 4807329109727062969
+    second: Emeralds_5
   - first:
-      213: -5761754228987130096
-    second: Jump 0
+      213: -3742739647830583651
+    second: Emeralds_6
   - first:
-      213: 5907920678353447086
-    second: Jump 1
-  - first:
-      213: -6086044393419928071
-    second: Jump 2
+      213: 213001197192241977
+    second: Emeralds_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -73,7 +63,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -82,7 +72,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -99,14 +89,14 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 128
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,10 +106,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
-    maxTextureSize: 128
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -129,23 +119,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Android
-    maxTextureSize: 128
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 128
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -157,199 +134,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle 0
+      name: Emeralds_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 34
-        width: 13
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 43
+        width: 48
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 558258431ae9b6348843e22a761fb510
-      internalID: -6447722072507503168
+      spriteID: cdc9dd5feaabbdc50800000000000000
+      internalID: 6691146932001021148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle 1
+      name: Emeralds_1
       rect:
         serializedVersion: 2
-        x: 18
-        y: 34
-        width: 13
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 52
+        y: 43
+        width: 50
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9af051e5ea809f849aead044a1531f01
-      internalID: 2962027833772318483
+      spriteID: 13253a061e1203f30800000000000000
+      internalID: 4553176475144245809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run 0
+      name: Emeralds_2
       rect:
         serializedVersion: 2
-        x: 35
-        y: 34
-        width: 13
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 108
+        y: 43
+        width: 50
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: be0d8079413a0fb4c907d14a4c9634f8
-      internalID: -2453208753318357113
+      spriteID: 60e558899a6bc22e0800000000000000
+      internalID: -2149142082637963770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run 1
+      name: Emeralds_3
       rect:
         serializedVersion: 2
-        x: 1
-        y: 17
-        width: 13
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 162
+        y: 43
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6902d0b94cd88d64c9006894e37ab9fb
-      internalID: 6348790710242686107
+      spriteID: f55de57f31ddd07b0800000000000000
+      internalID: -5256302112247196321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run 2
+      name: Emeralds_4
       rect:
         serializedVersion: 2
-        x: 18
-        y: 17
-        width: 13
-        height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 1
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2b808f5a8e92bce4889a79ff178b7225
-      internalID: 5513914976837039818
+      spriteID: d12c0cbee2b38b2f0800000000000000
+      internalID: -956949848106417635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run 3
+      name: Emeralds_5
       rect:
         serializedVersion: 2
-        x: 35
-        y: 17
-        width: 13
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2dd959c60f81b904cbdef4693a229bc5
-      internalID: -434675778434299504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jump 0
-      rect:
-        serializedVersion: 2
-        x: 1
+        x: 54
         y: 0
-        width: 13
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 50
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 766ba3cbaef832043814d7f5baa5ffff
-      internalID: -5761754228987130096
+      spriteID: 9bb2dafda5017b240800000000000000
+      internalID: 4807329109727062969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump 1
+      name: Emeralds_6
       rect:
         serializedVersion: 2
-        x: 18
+        x: 106
         y: 0
-        width: 13
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 50
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3d9340b7f5e2de646b9158501bb1558f
-      internalID: 5907920678353447086
+      spriteID: d969944ce1e1f0cc0800000000000000
+      internalID: -3742739647830583651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump 2
+      name: Emeralds_7
       rect:
         serializedVersion: 2
-        x: 35
+        x: 162
         y: 0
-        width: 13
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 26ee1b9dee5b26947b041987e02717ff
-      internalID: -6086044393419928071
+      spriteID: 9336067d57bb4f200800000000000000
+      internalID: 213001197192241977
       vertices: []
       indices: 
       edges: []
@@ -358,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -366,19 +321,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Idle 0: -6447722072507503168
-      Idle 1: 2962027833772318483
-      Jump 0: -5761754228987130096
-      Jump 1: 5907920678353447086
-      Jump 2: -6086044393419928071
-      Run 0: -2453208753318357113
-      Run 1: 6348790710242686107
-      Run 2: 5513914976837039818
-      Run 3: -434675778434299504
+      Emeralds_0: 6691146932001021148
+      Emeralds_1: 4553176475144245809
+      Emeralds_2: -2149142082637963770
+      Emeralds_3: -5256302112247196321
+      Emeralds_4: -956949848106417635
+      Emeralds_5: 4807329109727062969
+      Emeralds_6: -3742739647830583651
+      Emeralds_7: 213001197192241977
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

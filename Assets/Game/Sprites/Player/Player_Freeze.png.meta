@@ -1,41 +1,34 @@
 fileFormatVersion: 2
-guid: 10f3cacccb0c4c547be76836eba20664
-AssetOrigin:
-  serializedVersion: 1
-  productId: 188518
-  packageName: Simple 2D Platformer Assets Pack
-  packageVersion: 1.0
-  assetPath: Assets/Simple 2D Platformer BE2/Sprites/Player.png
-  uploadId: 417220
+guid: bb2edef26a9d9dd43903d7b47274bf05
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6447722072507503168
-    second: Idle 0
+      213: -8062112096441356487
+    second: e46879af-7cad-4ec5-9f1b-63d523621692_0
   - first:
-      213: 2962027833772318483
-    second: Idle 1
+      213: -4946071316032624167
+    second: e46879af-7cad-4ec5-9f1b-63d523621692_1
   - first:
-      213: -2453208753318357113
-    second: Run 0
+      213: 2417871788389486448
+    second: e46879af-7cad-4ec5-9f1b-63d523621692_2
   - first:
-      213: 6348790710242686107
-    second: Run 1
+      213: 5857324329695873136
+    second: e46879af-7cad-4ec5-9f1b-63d523621692_3
   - first:
-      213: 5513914976837039818
-    second: Run 2
+      213: 490520165052551784
+    second: e46879af-7cad-4ec5-9f1b-63d523621692_4
   - first:
-      213: -434675778434299504
-    second: Run 3
+      213: 1603203635383484574
+    second: e46879af-7cad-4ec5-9f1b-63d523621692_5
   - first:
-      213: -5761754228987130096
-    second: Jump 0
+      213: -6820416114381485595
+    second: e46879af-7cad-4ec5-9f1b-63d523621692_6
   - first:
-      213: 5907920678353447086
-    second: Jump 1
+      213: -5472357965973843148
+    second: e46879af-7cad-4ec5-9f1b-63d523621692_7
   - first:
-      213: -6086044393419928071
-    second: Jump 2
+      213: -6564487352984988663
+    second: e46879af-7cad-4ec5-9f1b-63d523621692_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -73,7 +66,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -82,7 +75,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -99,14 +92,14 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 128
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,10 +109,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
-    maxTextureSize: 128
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -129,23 +122,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Android
-    maxTextureSize: 128
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 128
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -157,199 +137,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle 0
+      name: Player_Freeze_0
       rect:
         serializedVersion: 2
         x: 1
         y: 34
         width: 13
         height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 558258431ae9b6348843e22a761fb510
-      internalID: -6447722072507503168
+      spriteID: 2f8429cfd62f9c746a826f0918f47a08
+      internalID: 175411256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle 1
+      name: Player_Freeze_1
       rect:
         serializedVersion: 2
         x: 18
         y: 34
         width: 13
         height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9af051e5ea809f849aead044a1531f01
-      internalID: 2962027833772318483
+      spriteID: cdf5d87ffc85bac4890eef3669f4e024
+      internalID: 1362749701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run 0
+      name: Player_Freeze_2
       rect:
         serializedVersion: 2
         x: 35
         y: 34
         width: 13
         height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be0d8079413a0fb4c907d14a4c9634f8
-      internalID: -2453208753318357113
+      spriteID: ba58287918ae2fd48906043dfea50807
+      internalID: -2026915047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run 1
+      name: Player_Freeze_3
       rect:
         serializedVersion: 2
         x: 1
         y: 17
         width: 13
         height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6902d0b94cd88d64c9006894e37ab9fb
-      internalID: 6348790710242686107
+      spriteID: 817eb914396eaf7438e5db097fdd9e2a
+      internalID: -1458396597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run 2
+      name: Player_Freeze_4
       rect:
         serializedVersion: 2
         x: 18
         y: 17
         width: 13
         height: 15
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b808f5a8e92bce4889a79ff178b7225
-      internalID: 5513914976837039818
+      spriteID: 7fecc71936dd93148b2563ff30fa71dc
+      internalID: -1692656589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run 3
+      name: Player_Freeze_5
       rect:
         serializedVersion: 2
         x: 35
         y: 17
         width: 13
         height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dd959c60f81b904cbdef4693a229bc5
-      internalID: -434675778434299504
+      spriteID: 469341cb71e22a4459b484eb971d64c6
+      internalID: -1423803405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump 0
+      name: Player_Freeze_6
       rect:
         serializedVersion: 2
         x: 1
         y: 0
         width: 13
         height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 766ba3cbaef832043814d7f5baa5ffff
-      internalID: -5761754228987130096
+      spriteID: dfd7d2b1c1b388b419a33e6f406b5802
+      internalID: -781923244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump 1
+      name: Player_Freeze_7
       rect:
         serializedVersion: 2
         x: 18
         y: 0
         width: 13
         height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d9340b7f5e2de646b9158501bb1558f
-      internalID: 5907920678353447086
+      spriteID: 683861d105df8434484792f86c17d0b0
+      internalID: -1002370980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump 2
+      name: Player_Freeze_8
       rect:
         serializedVersion: 2
         x: 35
         y: 0
         width: 13
         height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26ee1b9dee5b26947b041987e02717ff
-      internalID: -6086044393419928071
+      spriteID: 44819d249ef4cb1458f72f0d48b83156
+      internalID: -1751052472
       vertices: []
       indices: 
       edges: []
@@ -358,7 +338,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: b6eff1bf9105df545b7bbcf245772f6e
     internalID: 0
     vertices: []
     indices: 
@@ -368,17 +348,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Idle 0: -6447722072507503168
-      Idle 1: 2962027833772318483
-      Jump 0: -5761754228987130096
-      Jump 1: 5907920678353447086
-      Jump 2: -6086044393419928071
-      Run 0: -2453208753318357113
-      Run 1: 6348790710242686107
-      Run 2: 5513914976837039818
-      Run 3: -434675778434299504
+      Player_Freeze_0: 175411256
+      Player_Freeze_1: 1362749701
+      Player_Freeze_2: -2026915047
+      Player_Freeze_3: -1458396597
+      Player_Freeze_4: -1692656589
+      Player_Freeze_5: -1423803405
+      Player_Freeze_6: -781923244
+      Player_Freeze_7: -1002370980
+      Player_Freeze_8: -1751052472
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
