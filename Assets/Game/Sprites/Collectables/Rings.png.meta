@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 95f997a180c20604fb59bf87d686dc30
+guid: 9fe11776c268d7a4ca14f35fe1104aaf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6691146932001021148
-    second: Emeralds_0
+      213: 7972578118019343251
+    second: c5d3a7b4-43e5-46e5-9b39-fcd1e56f51f0_0
   - first:
-      213: 4553176475144245809
-    second: Emeralds_1
+      213: 4981473305136482568
+    second: c5d3a7b4-43e5-46e5-9b39-fcd1e56f51f0_1
   - first:
-      213: -2149142082637963770
-    second: Emeralds_2
+      213: -7656499514686297685
+    second: c5d3a7b4-43e5-46e5-9b39-fcd1e56f51f0_2
   - first:
-      213: -5256302112247196321
-    second: Emeralds_3
-  - first:
-      213: -956949848106417635
-    second: Emeralds_4
-  - first:
-      213: 4807329109727062969
-    second: Emeralds_5
-  - first:
-      213: -3742739647830583651
-    second: Emeralds_6
-  - first:
-      213: 213001197192241977
-    second: Emeralds_7
+      213: -4489700719247250069
+    second: c5d3a7b4-43e5-46e5-9b39-fcd1e56f51f0_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +60,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -134,177 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Emeralds_0
+      name: Rings_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 43
-        width: 48
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cdc9dd5feaabbdc50800000000000000
-      internalID: 6691146932001021148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Emeralds_1
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 43
-        width: 50
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 13253a061e1203f30800000000000000
-      internalID: 4553176475144245809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Emeralds_2
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 43
-        width: 50
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 60e558899a6bc22e0800000000000000
-      internalID: -2149142082637963770
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Emeralds_3
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 43
-        width: 49
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f55de57f31ddd07b0800000000000000
-      internalID: -5256302112247196321
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Emeralds_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1
-        width: 50
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d12c0cbee2b38b2f0800000000000000
-      internalID: -956949848106417635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Emeralds_5
-      rect:
-        serializedVersion: 2
-        x: 54
         y: 0
-        width: 50
-        height: 34
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9bb2dafda5017b240800000000000000
-      internalID: 4807329109727062969
+      spriteID: ccf90fa181716104ba002f82c837929a
+      internalID: 236238175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emeralds_6
+      name: Rings_1
       rect:
         serializedVersion: 2
-        x: 106
+        x: 16
         y: 0
-        width: 50
-        height: 33
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d969944ce1e1f0cc0800000000000000
-      internalID: -3742739647830583651
+      spriteID: fdfa904f0d214b64e9d1416f6938ce47
+      internalID: 1960210675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emeralds_7
+      name: Rings_2
       rect:
         serializedVersion: 2
-        x: 162
+        x: 32
         y: 0
-        width: 49
-        height: 33
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9336067d57bb4f200800000000000000
-      internalID: 213001197192241977
+      spriteID: 0fd8c396a038344459b6b4df5930c266
+      internalID: -78102482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rings_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57405fae665f213499019cee290d92d6
+      internalID: -954322920
       vertices: []
       indices: 
       edges: []
@@ -313,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 99e7eb2f077badb49b507d1d6f31a69f
     internalID: 0
     vertices: []
     indices: 
@@ -321,16 +221,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Emeralds_0: 6691146932001021148
-      Emeralds_1: 4553176475144245809
-      Emeralds_2: -2149142082637963770
-      Emeralds_3: -5256302112247196321
-      Emeralds_4: -956949848106417635
-      Emeralds_5: 4807329109727062969
-      Emeralds_6: -3742739647830583651
-      Emeralds_7: 213001197192241977
+      Rings_0: 236238175
+      Rings_1: 1960210675
+      Rings_2: -78102482
+      Rings_3: -954322920
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

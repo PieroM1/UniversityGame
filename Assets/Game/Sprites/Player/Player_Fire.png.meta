@@ -137,7 +137,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: e46879af-7cad-4ec5-9f1b-63d523621692_0
+      name: Player_Fire_0
       rect:
         serializedVersion: 2
         x: 1
@@ -150,16 +150,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 93fab3063cf9d1090800000000000000
-      internalID: -8062112096441356487
+      spriteID: e676ac21a961e38458d646540c5374c3
+      internalID: -1858113787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: e46879af-7cad-4ec5-9f1b-63d523621692_1
+      name: Player_Fire_1
       rect:
         serializedVersion: 2
         x: 18
@@ -172,16 +172,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9d9602ee7560c5bb0800000000000000
-      internalID: -4946071316032624167
+      spriteID: 990ecf69be8686f4caca7d3aee7d026e
+      internalID: -1974058788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: e46879af-7cad-4ec5-9f1b-63d523621692_2
+      name: Player_Fire_2
       rect:
         serializedVersion: 2
         x: 35
@@ -194,16 +194,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 07fc463c4910e8120800000000000000
-      internalID: 2417871788389486448
+      spriteID: fa4d1e617536138448b2a6686de803c0
+      internalID: 1766108790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: e46879af-7cad-4ec5-9f1b-63d523621692_3
+      name: Player_Fire_3
       rect:
         serializedVersion: 2
         x: 1
@@ -216,16 +216,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 07886c5c175694150800000000000000
-      internalID: 5857324329695873136
+      spriteID: 569cd0e7d9101f54fbf34f17d3691789
+      internalID: -1557550678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: e46879af-7cad-4ec5-9f1b-63d523621692_4
+      name: Player_Fire_4
       rect:
         serializedVersion: 2
         x: 18
@@ -238,16 +238,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8629f11cd7daec600800000000000000
-      internalID: 490520165052551784
+      spriteID: 1b1b1859f8947ef4094a6a8d5f6e4faa
+      internalID: 66951655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: e46879af-7cad-4ec5-9f1b-63d523621692_5
+      name: Player_Fire_5
       rect:
         serializedVersion: 2
         x: 35
@@ -260,16 +260,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e90c5a55639bf3610800000000000000
-      internalID: 1603203635383484574
+      spriteID: db26b752d6130f54ba05d47af9651b9a
+      internalID: -1481496292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: e46879af-7cad-4ec5-9f1b-63d523621692_6
+      name: Player_Fire_6
       rect:
         serializedVersion: 2
         x: 1
@@ -282,16 +282,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5e901f91ea30951a0800000000000000
-      internalID: -6820416114381485595
+      spriteID: f2344c3bd9e991a46a607afe3c247906
+      internalID: -1466698493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: e46879af-7cad-4ec5-9f1b-63d523621692_7
+      name: Player_Fire_7
       rect:
         serializedVersion: 2
         x: 18
@@ -304,16 +304,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 433995a7c674e04b0800000000000000
-      internalID: -5472357965973843148
+      spriteID: a10aac275bf704f4689ca84533625e00
+      internalID: 2066750250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: e46879af-7cad-4ec5-9f1b-63d523621692_8
+      name: Player_Fire_8
       rect:
         serializedVersion: 2
         x: 35
@@ -326,10 +326,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 90419c8588146e4a0800000000000000
-      internalID: -6564487352984988663
+      spriteID: 7ab2a9a858d369441a8942e8f207e57e
+      internalID: -400736332
       vertices: []
       indices: 
       edges: []
@@ -348,17 +348,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":3.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      e46879af-7cad-4ec5-9f1b-63d523621692_0: -8062112096441356487
-      e46879af-7cad-4ec5-9f1b-63d523621692_1: -4946071316032624167
-      e46879af-7cad-4ec5-9f1b-63d523621692_2: 2417871788389486448
-      e46879af-7cad-4ec5-9f1b-63d523621692_3: 5857324329695873136
-      e46879af-7cad-4ec5-9f1b-63d523621692_4: 490520165052551784
-      e46879af-7cad-4ec5-9f1b-63d523621692_5: 1603203635383484574
-      e46879af-7cad-4ec5-9f1b-63d523621692_6: -6820416114381485595
-      e46879af-7cad-4ec5-9f1b-63d523621692_7: -5472357965973843148
-      e46879af-7cad-4ec5-9f1b-63d523621692_8: -6564487352984988663
+      Player_Fire_0: -1858113787
+      Player_Fire_1: -1974058788
+      Player_Fire_2: 1766108790
+      Player_Fire_3: -1557550678
+      Player_Fire_4: 66951655
+      Player_Fire_5: -1481496292
+      Player_Fire_6: -1466698493
+      Player_Fire_7: 2066750250
+      Player_Fire_8: -400736332
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

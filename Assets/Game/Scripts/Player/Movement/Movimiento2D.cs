@@ -1,97 +1,82 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Movimiento2D : MonoBehaviour
 {
-    [SerializeField] private Controles controles;
-    [SerializeField] private Rigidbody2D rb2D;
-    [SerializeField] private float velocidadMovimiento;
-    [SerializeField] private float fuerzaSalto;
-    [SerializeField] private LayerMask queEsSuelo;
-    [SerializeField] private Transform controladorSuelo;
-    [SerializeField] private Vector3 dimensionesCaja;
-    private bool enSuelo;
+    // Component references
     private Animator animator;
-    private Vector2 direccion;
-    private bool mirandoDerecha = true;
-
-    private bool haSaltado = false;
+    private Rigidbody2D rb2D;
+    private SpriteRenderer sprite;
+    private InputAction moveAction;
+    private InputAction jumpAction;
+    //Movement parameters
+    [SerializeField] private float speedX = 5f;
+    [SerializeField] private float jumpForce = 7f;
+    private bool jumped = false;
+    private bool grounded;
+    // Ground check parameters
+    [SerializeField] private LayerMask isGround;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private Vector3 boxDimensions;
 
     private void Awake()
     {
-        controles ??= new Controles();
+        rb2D = GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-    }
-
-    private void OnEnable()
-    {
-        controles.Enable();
-        controles.Movimiento.Saltar.started += _ => Saltar();
-    }
-
-    private void OnDisable()
-    {
-        controles.Disable();
-        controles.Movimiento.Saltar.started -= _ => Saltar();
+        moveAction = InputSystem.actions.FindAction("Move");
+        jumpAction = InputSystem.actions.FindAction("Jump");
     }
 
     private void Update()
     {
-        direccion = controles.Movimiento.Mover.ReadValue<Vector2>();
-        AjustarRotacion(direccion.x);
-
-        // Parámetros para el Animator
-        animator.SetFloat("Velocidad", Mathf.Abs(direccion.x));
-        animator.SetBool("EnSuelo", enSuelo);
+        Vector2 move = moveAction.ReadValue<Vector2>();
+        rb2D.linearVelocityX = move.x * speedX;
+        if (move.x != 0) TurnAround(move);
+        if (jumpAction.WasPressedThisFrame()) Jump();
+        // Animator parameters
+        animator.SetFloat("Velocidad", Mathf.Abs(move.x));
+        animator.SetBool("EnSuelo", grounded);
     }
 
     private void FixedUpdate()
     {
-        rb2D.linearVelocity = new Vector2(direccion.x * velocidadMovimiento, rb2D.linearVelocityY);
-        enSuelo = Physics2D.OverlapBox(controladorSuelo.position, dimensionesCaja, 0f, queEsSuelo);
+        grounded = Physics2D.OverlapBox(groundCheck.position, boxDimensions, 0f, isGround);
 
-        if (!haSaltado && enSuelo)
+        if (!jumped && grounded)
         {
             animator.SetBool("Salto", false);
-            haSaltado = false;
+            jumped = false;
         }
-        else if (!haSaltado && !enSuelo)
+        else if (!jumped && !grounded)
         {
-            haSaltado = false;
+            jumped = false;
         }
-        else haSaltado = enSuelo;
+        else jumped = grounded;
     }
 
-    private void AjustarRotacion(float direccionX)
+    private void TurnAround(Vector2 move)
     {
-        if ((direccionX > 0 && !mirandoDerecha) || (direccionX < 0 && mirandoDerecha))
-            Girar();
+        sprite.flipX = move.x < 0;
     }
 
-    private void Girar()
+    private void Jump()
     {
-        mirandoDerecha = !mirandoDerecha;
-        Vector3 escala = transform.localScale;
-        escala.x *= -1;
-        transform.localScale = escala;
-    }
-
-    private void Saltar()
-    {
-        if (enSuelo)
+        if (grounded)
         {
-            rb2D.linearVelocity = new Vector2(rb2D.linearVelocityX, fuerzaSalto);
+            rb2D.linearVelocityY = jumpForce;
             animator.SetBool("Salto", true);
-            haSaltado = true;
+            jumped = true;
         }
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireCube(controladorSuelo.position, dimensionesCaja);
+        Gizmos.DrawWireCube(groundCheck.position, boxDimensions);
     }
 }
