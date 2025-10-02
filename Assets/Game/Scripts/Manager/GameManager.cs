@@ -24,17 +24,18 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         SceneManager.LoadScene("EscenaPrueba");
+        AudioManager.Instance.ChangeBackgroundMusic(AudioConstants.LEVEL_ICE);
+        UIManager.Instance.ShowHUD(true);
     }
 
     public void UpdateScore(int amount)
     {
         score += amount;
-        Debug.Log("Score: " + score);
+        UIManager.Instance.UpdateScoreUI(score);
     }
     public void LoseLife()
     {
         lives--;
-        Debug.Log("Lives: " + lives);
         if (lives <= 0)
         {
             GameOver();
