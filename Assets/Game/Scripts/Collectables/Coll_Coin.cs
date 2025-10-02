@@ -2,21 +2,10 @@ using UnityEngine;
 
 public class Coll_Coin : Collectable
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    
     protected override void Collect(GameObject player)
     {
-        Debug.Log("Coin collected by " + player.name);
+        GameManager.Instance.UpdateScore(10);
+        AudioManager.Instance.PlaySFX(SFXConstants.RING);
         base.Collect(player);
     }
 }

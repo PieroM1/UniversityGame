@@ -1,16 +1,10 @@
 using UnityEngine;
 
-public class Coll_Star : MonoBehaviour
+public class Coll_Star : Collectable
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected override void Collect(GameObject player)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        AudioManager.Instance.PlaySFX(SFXConstants.POWER_UP);
+        base.Collect(player);
     }
 }

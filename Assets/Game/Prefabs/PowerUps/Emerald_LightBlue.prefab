@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2086042518956276806}
   - component: {fileID: 6144355621711085298}
-  - component: {fileID: 8862171354761615690}
   - component: {fileID: -7128338120554132352}
+  - component: {fileID: 3254389956805283484}
   m_Layer: 0
   m_Name: Emerald_LightBlue
   m_TagString: PowerUp
@@ -92,18 +92,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8862171354761615690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155072022188828816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a39a1d88081b9949bf41c878f74234d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Collectable
 --- !u!61 &-7128338120554132352
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -142,7 +130,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.53125, y: 1.03125}
+    oldSize: {x: 1.5, y: 1}
     newSize: {x: 1.53125, y: 1.03125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -150,3 +138,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.53125, y: 1.03125}
   m_EdgeRadius: 0
+--- !u!114 &3254389956805283484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155072022188828816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03966581734b6ec4691325a45788a8de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coll_PowerUp

@@ -68,6 +68,7 @@ public class Movimiento2D : MonoBehaviour
     {
         if (grounded)
         {
+            AudioManager.Instance.PlaySFX(SFXConstants.JUMP);
             rb2D.linearVelocityY = jumpForce;
             animator.SetBool("Salto", true);
             jumped = true;
