@@ -5,17 +5,16 @@ public class Collectable : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Collider2D coll2D;
 
-    void Start()
+    private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         coll2D = GetComponent<Collider2D>();
     }
-
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            Collect(collision.gameObject);
+            Collect(other.gameObject);
         }
     }
 

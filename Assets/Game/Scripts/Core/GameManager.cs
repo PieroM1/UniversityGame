@@ -24,8 +24,6 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         SceneManager.LoadScene("EscenaPrueba");
-        AudioManager.Instance.ChangeBackgroundMusic(AudioConstants.LEVEL_ICE);
-        UIManager.Instance.ShowHUD(true);
     }
 
     public void UpdateScore(int amount)

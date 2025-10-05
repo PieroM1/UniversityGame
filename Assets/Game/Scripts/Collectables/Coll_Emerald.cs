@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Coll_Star : Collectable
+public class Coll_Emerald : Collectable
 {
     protected override void Collect(GameObject player)
     {
