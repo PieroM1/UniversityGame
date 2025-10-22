@@ -31,8 +31,6 @@ public class Checkpoint : MonoBehaviour
         {
             if (checkPoint != this) checkPoint.ChangeActiveState(false);
         }
-
-        Debug.Log("Checkpoint activated in" + transform.position);
     }
 
     private void ChangeActiveState(bool state)

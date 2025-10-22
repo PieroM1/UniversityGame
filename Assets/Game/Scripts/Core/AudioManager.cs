@@ -84,7 +84,6 @@ public class AudioManager : MonoBehaviour
     {
         if (sfxDict.ContainsKey(key))
         {
-            Debug.Log("Playing SFX: " + key);
             sfxSource.PlayOneShot(sfxDict[key]);
         }
     }

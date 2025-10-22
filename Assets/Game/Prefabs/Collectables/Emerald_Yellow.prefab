@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 622902490045865657}
   - component: {fileID: 7576523023878825774}
   - component: {fileID: 9052857783065143087}
-  - component: {fileID: 6468730269741864453}
+  - component: {fileID: -999182655833728637}
   m_Layer: 0
   m_Name: Emerald_Yellow
   m_TagString: PowerUp
@@ -138,7 +138,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.5625, y: 1.0625}
   m_EdgeRadius: 0
---- !u!114 &6468730269741864453
+--- !u!114 &-999182655833728637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,6 +147,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1466388736752837316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03966581734b6ec4691325a45788a8de, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a39a1d88081b9949bf41c878f74234d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Coll_PowerUp
+  m_EditorClassIdentifier: Assembly-CSharp::Collectable
+  collectable: {fileID: 11400000, guid: 3a271b5676691be40af6f8a7b72334d6, type: 2}

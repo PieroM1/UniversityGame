@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6627122382688543299}
   - component: {fileID: 7668998531989959852}
   - component: {fileID: 8864466812382621248}
-  - component: {fileID: 1669670120939307005}
   - component: {fileID: 3332602223759843257}
+  - component: {fileID: -4399066414741712822}
   m_Layer: 0
   m_Name: Ring
   m_TagString: Untagged
@@ -115,18 +115,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1669670120939307005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8083608162374958452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3716aafc1a78b14fb68decc6e00ca1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Coll_Coin
 --- !u!61 &3332602223759843257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -173,3 +161,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-4399066414741712822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8083608162374958452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a39a1d88081b9949bf41c878f74234d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collectable
+  collectable: {fileID: 11400000, guid: 3d0c8143c900fd642b1f43524d6e1827, type: 2}

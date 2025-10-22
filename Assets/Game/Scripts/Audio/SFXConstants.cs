@@ -6,5 +6,8 @@ public enum SFXConstants
     DAMAGE,
     CHECKPOINT,
     EXPLOSION,
-    RESPAWN
+    RESPAWN,
+    SPRING,
+    EMERALD_COLLECT,
+    PERFECT
 }

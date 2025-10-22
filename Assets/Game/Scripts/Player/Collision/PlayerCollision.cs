@@ -20,7 +20,6 @@ public class PlayerCollision : MonoBehaviour
 
     private void Respawn()
     {
-        Debug.Log("Respawn...");
         AudioManager.Instance.PlaySFX(SFXConstants.RESPAWN);
         transform.position = GameManager.Instance.lastCheckpointPosition;
     }

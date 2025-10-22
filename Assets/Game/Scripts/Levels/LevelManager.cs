@@ -3,22 +3,23 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public AudioConstants backgroundMusic;
-    public int totalCollectables = 3;
-    private int collectedItems = 0;
+    public int totalEmeralds = 3;
+    private int collectedEmeralds = 0;
+    [SerializeField] private int emeraldValue = 100;
 
     private void Start()
     {
         AudioManager.Instance.ChangeBackgroundMusic(backgroundMusic);
-        collectedItems = 0;
+        collectedEmeralds = 0;
         UIManager.Instance.ShowHUD(true);
     }
 
-    public void CollectItem(int value)
+    public void CollectItem()
     {
-        collectedItems += value;
-        GameManager.Instance.UpdateScore(value);
+        collectedEmeralds++;
+        GameManager.Instance.UpdateScore(emeraldValue);
 
-        if (collectedItems >= totalCollectables)
+        if (collectedEmeralds >= totalEmeralds)
         {
             LevelComplete();
         }

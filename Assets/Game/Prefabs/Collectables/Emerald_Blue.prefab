@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 190687583197397486}
   - component: {fileID: 2273796841154613414}
   - component: {fileID: 4523359174210709897}
-  - component: {fileID: 6989739883892975721}
+  - component: {fileID: 7987737662140894292}
   m_Layer: 0
   m_Name: Emerald_Blue
   m_TagString: PowerUp
@@ -138,7 +138,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.53125, y: 1.03125}
   m_EdgeRadius: 0
---- !u!114 &6989739883892975721
+--- !u!114 &7987737662140894292
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,6 +147,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7316156575857887536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03966581734b6ec4691325a45788a8de, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a39a1d88081b9949bf41c878f74234d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Coll_PowerUp
+  m_EditorClassIdentifier: Assembly-CSharp::Collectable
+  collectable: {fileID: 11400000, guid: 3a271b5676691be40af6f8a7b72334d6, type: 2}
