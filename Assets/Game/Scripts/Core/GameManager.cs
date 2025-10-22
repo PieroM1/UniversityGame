@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public int score = 0;
     public int lives = 3;
+    public Vector3 lastCheckpointPosition;
 
     private void Awake()
     {
@@ -43,5 +44,10 @@ public class GameManager : MonoBehaviour
     private void GameOver()
     {
         Debug.Log("Game Over!");
+    }
+
+    public void UpdateCheckpoint(Vector3 newCheckpoint)
+    {
+        lastCheckpointPosition = newCheckpoint;
     }
 }

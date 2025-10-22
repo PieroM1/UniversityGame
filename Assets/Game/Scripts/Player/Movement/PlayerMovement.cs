@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Movimiento2D : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     // Component references
     private Animator animator;
@@ -36,11 +36,14 @@ public class Movimiento2D : MonoBehaviour
     {
         Vector2 move = moveAction.ReadValue<Vector2>();
         rb2D.linearVelocityX = move.x * speedX;
-        if (move.x != 0) TurnAround(move);
+        if (move.x != 0)
+        {
+            sprite.flipX = move.x < 0;
+        }
         if (jumpAction.WasPressedThisFrame()) Jump();
         // Animator parameters
-        animator.SetFloat("Velocidad", Mathf.Abs(move.x));
-        animator.SetBool("EnSuelo", grounded);
+        animator.SetFloat("Speed", Mathf.Abs(move.x));
+        animator.SetBool("Grounded", grounded);
     }
 
     private void FixedUpdate()
@@ -49,7 +52,7 @@ public class Movimiento2D : MonoBehaviour
 
         if (!jumped && grounded)
         {
-            animator.SetBool("Salto", false);
+            animator.SetBool("Jump", false);
             jumped = false;
         }
         else if (!jumped && !grounded)
@@ -59,18 +62,13 @@ public class Movimiento2D : MonoBehaviour
         else jumped = grounded;
     }
 
-    private void TurnAround(Vector2 move)
-    {
-        sprite.flipX = move.x < 0;
-    }
-
     private void Jump()
     {
         if (grounded)
         {
             AudioManager.Instance.PlaySFX(SFXConstants.JUMP);
             rb2D.linearVelocityY = jumpForce;
-            animator.SetBool("Salto", true);
+            animator.SetBool("Jump", true);
             jumped = true;
         }
     }

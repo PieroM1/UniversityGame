@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class RoomManager : MonoBehaviour
+public class Room : MonoBehaviour
 {
     private GameObject virtualCamara;
 

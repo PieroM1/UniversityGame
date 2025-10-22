@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-public class WindManager : MonoBehaviour
+public class Wind : MonoBehaviour
 {
     [Header("Wind Object")]
     [SerializeField] private GameObject windObject;
