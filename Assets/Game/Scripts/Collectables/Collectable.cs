@@ -14,10 +14,10 @@ public class Collectable : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
-            Collect(other.gameObject);
+            Collect();
     }
 
-    protected virtual void Collect(GameObject player)
+    protected virtual void Collect()
     {
         if (collectable != null)
         {

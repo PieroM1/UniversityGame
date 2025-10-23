@@ -287,7 +287,7 @@ MonoBehaviour:
   - key: 0
     clip: {fileID: 8300000, guid: 5dddb7186a3c80c438b14c9dbae684de, type: 3}
   - key: 2
-    clip: {fileID: 8300000, guid: 6a249a1832e1c5b44a1c575e6f352c84, type: 3}
+    clip: {fileID: 8300000, guid: 3003b09a27d8b5640b23d71694ec74bc, type: 3}
   - key: 1
     clip: {fileID: 8300000, guid: d10cb707d35beff42ae15917a5ded89a, type: 3}
   - key: 4
