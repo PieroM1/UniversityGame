@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (grounded)
         {
-            AudioManager.Instance.PlaySFX(SFXConstants.JUMP);
+            //AudioManager.Instance.PlaySFX(SFXConstants.JUMP);
             rb2D.linearVelocityY = jumpForce;
             animator.SetBool("Jump", true);
             jumped = true;
