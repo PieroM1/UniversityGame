@@ -22,8 +22,8 @@ public class Checkpoint : MonoBehaviour
 
     private void ActivateCheckpoint(Transform player)
     {
-        GameManager.Instance.UpdateCheckpoint(transform.position);
-        AudioManager.Instance.PlaySFX(SFXConstants.CHECKPOINT);
+        //GameManager.Instance.UpdateCheckpoint(transform.position);
+        //AudioManager.Instance.PlaySFX(SFXConstants.CHECKPOINT);
         ChangeActiveState(true);
 
         // Deactivate other checkpoints
