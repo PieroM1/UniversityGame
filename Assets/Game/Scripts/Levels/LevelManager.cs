@@ -9,9 +9,9 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        //AudioManager.Instance.ChangeBackgroundMusic(backgroundMusic);
-        //collectedEmeralds = 0;
-        //UIManager.Instance.ShowHUD(true);
+        AudioManager.Instance.ChangeBackgroundMusic(backgroundMusic);
+        collectedEmeralds = 0;
+        UIManager.Instance.ShowHUD(true);
     }
 
     public void CollectItem()
