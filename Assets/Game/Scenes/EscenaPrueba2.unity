@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &351043515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 351043516}
+  m_Layer: 0
+  m_Name: BombSpawner
+  m_TagString: BombSpawner
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &351043516
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351043515}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 747327765}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &514008683
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 198a9f587ed014e419279b8fc6c10580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BombSpawner
-  bombPrefab: {fileID: 4334238302761479270, guid: 68c0352a7498c2849939d2b3e1278644, type: 3}
+  prefab: {fileID: 4334238302761479270, guid: 68c0352a7498c2849939d2b3e1278644, type: 3}
+  spawnPoint: {fileID: 351043516}
 --- !u!4 &743826904
 Transform:
   m_ObjectHideFlags: 0
@@ -389,11 +421,12 @@ Transform:
   m_GameObject: {fileID: 747327760}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.37, y: -4.01, z: 0}
+  m_LocalPosition: {x: -2.55, y: -2.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1389483611}
+  - {fileID: 351043516}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &747327766
