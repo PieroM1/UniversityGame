@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8d83a6a489438a34bb3d4cd99c07329d
+guid: 2d316a88b3b675f4eaa5e6fb105f8065
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -35,6 +35,18 @@ TextureImporter:
   - first:
       213: 1883149842485426766
     second: 4f219734-7037-404c-a893-0ce137953ce0_10
+  - first:
+      213: -5196163130551621665
+    second: 4f219734-7037-404c-a893-0ce137953ce0_11
+  - first:
+      213: 5108414827594641022
+    second: 4f219734-7037-404c-a893-0ce137953ce0_12
+  - first:
+      213: 4349677592479736707
+    second: 4f219734-7037-404c-a893-0ce137953ce0_13
+  - first:
+      213: 3190516660589724372
+    second: 4f219734-7037-404c-a893-0ce137953ce0_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -146,8 +158,8 @@ TextureImporter:
       name: KirbyIce_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 95
+        x: 1
+        y: 119
         width: 24
         height: 33
       alignment: 7
@@ -158,8 +170,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 818d3ec4ebb8f04429ca96253ba1884f
-      internalID: 1594802463
+      spriteID: d8f910e87f90a5f4687f2847b4982505
+      internalID: -1789656053
       vertices: []
       indices: 
       edges: []
@@ -168,20 +180,20 @@ TextureImporter:
       name: KirbyIce_1
       rect:
         serializedVersion: 2
-        x: 29
-        y: 95
+        x: 30
+        y: 119
         width: 26
         height: 24
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18e7835c235ca3b4ca6ba80a685d8e54
-      internalID: -1002009707
+      spriteID: a1c3dc2edab57b64fad71bd3f5e72056
+      internalID: -1528434061
       vertices: []
       indices: 
       edges: []
@@ -190,20 +202,20 @@ TextureImporter:
       name: KirbyIce_2
       rect:
         serializedVersion: 2
-        x: 60
-        y: 92
+        x: 61
+        y: 116
         width: 26
         height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.4, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92d0b0653c9ba1e479be7b3325f6e215
-      internalID: -1898576921
+      spriteID: 0c4d5076e7e90b241af66ffc31028bc5
+      internalID: -1142238008
       vertices: []
       indices: 
       edges: []
@@ -212,8 +224,8 @@ TextureImporter:
       name: KirbyIce_3
       rect:
         serializedVersion: 2
-        x: 91
-        y: 96
+        x: 92
+        y: 120
         width: 25
         height: 32
       alignment: 7
@@ -224,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 794a6533bd27a4243bef8ab1f4551f00
-      internalID: -740166552
+      spriteID: 161a47339800af946add17a0da8f59da
+      internalID: -1017731545
       vertices: []
       indices: 
       edges: []
@@ -234,8 +246,8 @@ TextureImporter:
       name: KirbyIce_4
       rect:
         serializedVersion: 2
-        x: 1
-        y: 52
+        x: 2
+        y: 75
         width: 23
         height: 40
       alignment: 7
@@ -246,8 +258,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcf40ccc2c03cf2439427fc3c807336f
-      internalID: 1764674432
+      spriteID: 032f75b426027774dbb7ec242cb335f6
+      internalID: -624639703
       vertices: []
       indices: 
       edges: []
@@ -256,8 +268,8 @@ TextureImporter:
       name: KirbyIce_5
       rect:
         serializedVersion: 2
-        x: 34
-        y: 54
+        x: 35
+        y: 77
         width: 24
         height: 32
       alignment: 7
@@ -268,8 +280,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 601fb7daf09425e40af88ed2d4c65d44
-      internalID: -917742268
+      spriteID: d0ac83c38074a7a48b35bac167fe0c02
+      internalID: 2091491687
       vertices: []
       indices: 
       edges: []
@@ -278,8 +290,8 @@ TextureImporter:
       name: KirbyIce_6
       rect:
         serializedVersion: 2
-        x: 63
-        y: 54
+        x: 64
+        y: 77
         width: 24
         height: 32
       alignment: 7
@@ -290,8 +302,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c77bf1838d84c294ea0748dfe40e5853
-      internalID: -503141012
+      spriteID: 9276ebdbec5bba44c8b5455fed4de2e9
+      internalID: -539433431
       vertices: []
       indices: 
       edges: []
@@ -300,8 +312,8 @@ TextureImporter:
       name: KirbyIce_7
       rect:
         serializedVersion: 2
-        x: 1
-        y: 14
+        x: 2
+        y: 41
         width: 24
         height: 33
       alignment: 7
@@ -312,8 +324,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d213f6d8b932774ebeab04ad5624e0f
-      internalID: -1597874638
+      spriteID: 33a641f7bed51c5428be0a6c671fed75
+      internalID: -1058423680
       vertices: []
       indices: 
       edges: []
@@ -322,8 +334,8 @@ TextureImporter:
       name: KirbyIce_8
       rect:
         serializedVersion: 2
-        x: 30
-        y: 14
+        x: 31
+        y: 41
         width: 23
         height: 34
       alignment: 7
@@ -334,8 +346,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b55815aca41d3748b6134c84d5d42f5
-      internalID: -15027772
+      spriteID: 3bd00c1506f79004aa443e65ead856d2
+      internalID: 221244419
       vertices: []
       indices: 
       edges: []
@@ -344,8 +356,8 @@ TextureImporter:
       name: KirbyIce_9
       rect:
         serializedVersion: 2
-        x: 58
-        y: 14
+        x: 59
+        y: 41
         width: 24
         height: 34
       alignment: 7
@@ -356,8 +368,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4908879c0a287a4ebe8f02240b796c3
-      internalID: 1892941591
+      spriteID: a71a2bb3bd7fa834e8cb2816cec3d021
+      internalID: -2011814541
       vertices: []
       indices: 
       edges: []
@@ -366,8 +378,8 @@ TextureImporter:
       name: KirbyIce_10
       rect:
         serializedVersion: 2
-        x: 87
-        y: 14
+        x: 88
+        y: 41
         width: 24
         height: 32
       alignment: 7
@@ -378,8 +390,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29847d79bc894d949b927ef104cc2597
-      internalID: 1422110020
+      spriteID: 856dcd12127a31d4c8a255a83fe65cd4
+      internalID: -355908730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyIce_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 28
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f5f98a1884cdd42af98b3bc3248ce9
+      internalID: -1038893749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyIce_12
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 0
+        width: 28
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d5dd2d6f6094a4c87e95d5df36dcec
+      internalID: 424005942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyIce_13
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 0
+        width: 28
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfa96452b6c6124988d20dadd525ab1
+      internalID: -1062139491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyIce_14
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 0
+        width: 28
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f9ff10ad7727c448ebca686edc03e2
+      internalID: 1144929242
       vertices: []
       indices: 
       edges: []
@@ -388,7 +488,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d10c83ed23256b947b9380ce5f08f524
+    spriteID: e4e7dc0f0eebf26469504701a1c16a1d
     internalID: 0
     vertices: []
     indices: 
@@ -398,19 +498,23 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":3.0},"gridSpriteSize":{"x":24.0,"y":24.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      KirbyIce_0: 1594802463
-      KirbyIce_1: -1002009707
-      KirbyIce_10: 1422110020
-      KirbyIce_2: -1898576921
-      KirbyIce_3: -740166552
-      KirbyIce_4: 1764674432
-      KirbyIce_5: -917742268
-      KirbyIce_6: -503141012
-      KirbyIce_7: -1597874638
-      KirbyIce_8: -15027772
-      KirbyIce_9: 1892941591
+      KirbyIce_0: -1789656053
+      KirbyIce_1: -1528434061
+      KirbyIce_10: -355908730
+      KirbyIce_11: -1038893749
+      KirbyIce_12: 424005942
+      KirbyIce_13: -1062139491
+      KirbyIce_14: 1144929242
+      KirbyIce_2: -1142238008
+      KirbyIce_3: -1017731545
+      KirbyIce_4: -624639703
+      KirbyIce_5: 2091491687
+      KirbyIce_6: -539433431
+      KirbyIce_7: -1058423680
+      KirbyIce_8: 221244419
+      KirbyIce_9: -2011814541
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
