@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7287462134753682063}
   - component: {fileID: 3345010027584119763}
   - component: {fileID: 4013169288693986903}
-  - component: {fileID: 7269052537499574385}
+  - component: {fileID: -8421396325846987797}
   m_Layer: 0
   m_Name: PowerUp_Ninja
   m_TagString: PowerUp
@@ -138,7 +138,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1875, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7269052537499574385
+--- !u!114 &-8421396325846987797
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6868042166645846657}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a39a1d88081b9949bf41c878f74234d, type: 3}
+  m_Script: {fileID: 11500000, guid: 03966581734b6ec4691325a45788a8de, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Collectable
-  collectable: {fileID: 11400000, guid: 280d81df19efaf347a53cfba00411873, type: 2}
+  m_EditorClassIdentifier: Assembly-CSharp::Powerup
+  powerup: {fileID: 11400000, guid: 2abe6a292acd3214e83c9b7a58d7e075, type: 2}

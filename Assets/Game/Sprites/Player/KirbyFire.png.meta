@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0a4de05967a99d64da31569d5a4ee0b1
+guid: 3c573441b89e4d74eab7dfe6d3b1ba1a
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -35,6 +35,21 @@ TextureImporter:
   - first:
       213: 1528298026419654964
     second: 0ddefb8a-1740-41ae-87a5-64b47face567_10
+  - first:
+      213: -4565336324466149052
+    second: 0ddefb8a-1740-41ae-87a5-64b47face567_11
+  - first:
+      213: -8783259871533173064
+    second: 0ddefb8a-1740-41ae-87a5-64b47face567_12
+  - first:
+      213: 861087974029488308
+    second: 0ddefb8a-1740-41ae-87a5-64b47face567_13
+  - first:
+      213: -5903594350246754804
+    second: 0ddefb8a-1740-41ae-87a5-64b47face567_14
+  - first:
+      213: -3059721888570436051
+    second: 0ddefb8a-1740-41ae-87a5-64b47face567_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -147,7 +162,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3
-        y: 94
+        y: 125
         width: 24
         height: 33
       alignment: 7
@@ -158,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c47c734810a4c0545bb9b60c39619fbb
-      internalID: -1595900145
+      spriteID: e930572e5f19fb541b449c05efe91fbe
+      internalID: 1358635472
       vertices: []
       indices: 
       edges: []
@@ -169,7 +184,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 94
+        y: 125
         width: 23
         height: 34
       alignment: 7
@@ -180,8 +195,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49501472c13b6cd4197e9f84f623d7f2
-      internalID: -1256149766
+      spriteID: 4b8eabec22699184eb7ad523d4bd6d7a
+      internalID: 1106862717
       vertices: []
       indices: 
       edges: []
@@ -191,7 +206,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 94
+        y: 125
         width: 24
         height: 34
       alignment: 7
@@ -202,8 +217,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe2e8cabe18a8064c87ed36ad80d708c
-      internalID: 1553178012
+      spriteID: bdff872c3bc5ef442a898bcd9bb2e38e
+      internalID: 578551999
       vertices: []
       indices: 
       edges: []
@@ -213,7 +228,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 89
-        y: 94
+        y: 125
         width: 24
         height: 32
       alignment: 7
@@ -224,8 +239,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31e0a8d1cd31bc2428dfc8662aacf8f4
-      internalID: -655590677
+      spriteID: bbbd812f4a31f5448b61d62a28727e3b
+      internalID: -1487238279
       vertices: []
       indices: 
       edges: []
@@ -235,7 +250,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 59
+        y: 89
         width: 24
         height: 33
       alignment: 7
@@ -246,8 +261,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7adac7f7441c3f245b1dbc6255375189
-      internalID: -1383760485
+      spriteID: 4c5311748fe78e84fab2c16e5fe0c9a1
+      internalID: 1713105122
       vertices: []
       indices: 
       edges: []
@@ -257,7 +272,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 30
-        y: 59
+        y: 89
         width: 26
         height: 24
       alignment: 7
@@ -268,8 +283,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 008d19f9463eb084d852236b65aec96d
-      internalID: 464562707
+      spriteID: 31d111f6616ac9f40829f240bb551587
+      internalID: 762390066
       vertices: []
       indices: 
       edges: []
@@ -279,7 +294,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 62
-        y: 59
+        y: 89
         width: 26
         height: 27
       alignment: 7
@@ -290,8 +305,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecf07e4dcbb46b146a4248f3ae03a899
-      internalID: 1249481598
+      spriteID: ea83d07e83793554a8584edd0f891998
+      internalID: -1866395876
       vertices: []
       indices: 
       edges: []
@@ -301,7 +316,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 95
-        y: 59
+        y: 89
         width: 25
         height: 32
       alignment: 7
@@ -312,8 +327,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c74b23cfaef331d44b727db8baafad2b
-      internalID: -694331463
+      spriteID: 953c9ce492473cd4db1605d5f190eba3
+      internalID: -818522862
       vertices: []
       indices: 
       edges: []
@@ -323,7 +338,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 12
+        y: 43
         width: 23
         height: 40
       alignment: 7
@@ -334,8 +349,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 070d25061470d83479db04cc6c322a65
-      internalID: 1244885220
+      spriteID: 195294930e50652458b3bb188b3ae952
+      internalID: -901504044
       vertices: []
       indices: 
       edges: []
@@ -344,8 +359,8 @@ TextureImporter:
       name: KirbyFire_9
       rect:
         serializedVersion: 2
-        x: 34
-        y: 14
+        x: 28
+        y: 45
         width: 24
         height: 32
       alignment: 7
@@ -356,8 +371,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67132a985989d9949bcd99eafe30d7f4
-      internalID: 11497137
+      spriteID: bdbc831b65e67f749aa56b2fbfd75cbd
+      internalID: -715383401
       vertices: []
       indices: 
       edges: []
@@ -366,8 +381,8 @@ TextureImporter:
       name: KirbyFire_10
       rect:
         serializedVersion: 2
-        x: 72
-        y: 15
+        x: 59
+        y: 46
         width: 24
         height: 32
       alignment: 7
@@ -378,8 +393,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e8c1a8ca2c95f949848a54298947261
-      internalID: 895608524
+      spriteID: 3540b3ee84139234fb2f43d9bb2f8d46
+      internalID: -196308761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyFire_11
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 45
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf28be1ffebaed84ab6615cc60dd9b3c
+      internalID: 467704868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyFire_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036d35398a8cb604fa723d73e09c93cb
+      internalID: -1788464411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyFire_13
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 4
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54104396cdc928c4caa2fc9fa9455680
+      internalID: -1237437429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyFire_14
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 4
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4171539f57012934bb872163b84e9b34
+      internalID: -2075111355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyFire_15
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 3
+        width: 26
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d811931348e64144a17eff7dbc8ea55
+      internalID: -103665846
       vertices: []
       indices: 
       edges: []
@@ -388,7 +513,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6e3b63776dd11c74b96f63e7f3572e9b
+    spriteID: 834c36c4a99071246981e1ff52a161d5
     internalID: 0
     vertices: []
     indices: 
@@ -398,19 +523,24 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":3.0},"gridSpriteSize":{"x":24.0,"y":24.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      KirbyFire_0: -1595900145
-      KirbyFire_1: -1256149766
-      KirbyFire_10: 895608524
-      KirbyFire_2: 1553178012
-      KirbyFire_3: -655590677
-      KirbyFire_4: -1383760485
-      KirbyFire_5: 464562707
-      KirbyFire_6: 1249481598
-      KirbyFire_7: -694331463
-      KirbyFire_8: 1244885220
-      KirbyFire_9: 11497137
+      KirbyFire_0: 1358635472
+      KirbyFire_1: 1106862717
+      KirbyFire_10: -196308761
+      KirbyFire_11: 467704868
+      KirbyFire_12: -1788464411
+      KirbyFire_13: -1237437429
+      KirbyFire_14: -2075111355
+      KirbyFire_15: -103665846
+      KirbyFire_2: 578551999
+      KirbyFire_3: -1487238279
+      KirbyFire_4: 1713105122
+      KirbyFire_5: 762390066
+      KirbyFire_6: -1866395876
+      KirbyFire_7: -818522862
+      KirbyFire_8: -901504044
+      KirbyFire_9: -715383401
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

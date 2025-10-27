@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4693c793100e98e449ac73d03d106162
+guid: 728449561344b504683f54fe71dd833a
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -35,6 +35,9 @@ TextureImporter:
   - first:
       213: 1163555194327281435
     second: 288cbc45-9d53-4326-aac7-fad37d2cacc0_10
+  - first:
+      213: -8088641673417122703
+    second: 288cbc45-9d53-4326-aac7-fad37d2cacc0_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -143,243 +146,265 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 288cbc45-9d53-4326-aac7-fad37d2cacc0_0
+      name: KirbyNinja_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 95
-        width: 25
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 96
+        width: 24
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4b997608fa1e3da80800000000000000
-      internalID: -8443156732499748428
+      spriteID: 3922dfea5f068ba4ba5d49d5e789d824
+      internalID: 955391747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 288cbc45-9d53-4326-aac7-fad37d2cacc0_1
+      name: KirbyNinja_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 96
+        width: 22
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d73dc7b61ff834387d3b0addec5c4e
+      internalID: 1543420851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyNinja_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 96
+        width: 27
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9e6aa06841761469f82e4564046a83
+      internalID: 1425311743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyNinja_3
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 96
+        width: 27
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e422a3b07aebbf8499fb4ed2055a5f7b
+      internalID: -2066591388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyNinja_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 57
+        width: 23
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76f268feb73d2e419d2e6e65ef03b9d
+      internalID: -926299255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyNinja_5
       rect:
         serializedVersion: 2
         x: 28
-        y: 95
-        width: 24
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5458d197e5c4825d0800000000000000
-      internalID: -3087133575919860411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 288cbc45-9d53-4326-aac7-fad37d2cacc0_2
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 95
-        width: 29
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ff97da2d6b32ca60800000000000000
-      internalID: 7692776453558476784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 288cbc45-9d53-4326-aac7-fad37d2cacc0_3
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 95
-        width: 29
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d9e23227e15c83300800000000000000
-      internalID: 232152115364179613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 288cbc45-9d53-4326-aac7-fad37d2cacc0_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 56
-        width: 24
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9e932fd07bbd7e8e0800000000000000
-      internalID: -1664119958030632471
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 288cbc45-9d53-4326-aac7-fad37d2cacc0_5
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 56
-        width: 25
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 781d81c371d4a5590800000000000000
-      internalID: -7684745051966484089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 288cbc45-9d53-4326-aac7-fad37d2cacc0_6
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 49
-        width: 23
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b7fd594421f800f0800000000000000
-      internalID: -1150404566641150030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 288cbc45-9d53-4326-aac7-fad37d2cacc0_7
-      rect:
-        serializedVersion: 2
-        x: 83
         y: 57
-        width: 26
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 23
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2a9b308dcee6a0a40800000000000000
-      internalID: 5335198672089233826
+      spriteID: 2da2f472387e7c94f9704bc5511a84f1
+      internalID: -1523988841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 288cbc45-9d53-4326-aac7-fad37d2cacc0_8
+      name: KirbyNinja_6
       rect:
         serializedVersion: 2
-        x: 1
-        y: 8
-        width: 25
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 56
+        y: 50
+        width: 21
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 103171205f48278c0800000000000000
-      internalID: -4002990930942029055
+      spriteID: cdc44f70581914d47b91fdadf81c6985
+      internalID: 552628149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 288cbc45-9d53-4326-aac7-fad37d2cacc0_9
+      name: KirbyNinja_7
       rect:
         serializedVersion: 2
-        x: 33
-        y: 11
-        width: 26
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 84
+        y: 58
+        width: 24
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0c92676f70d6a0830800000000000000
-      internalID: 4038159896858208704
+      spriteID: 2b3c0caf139e49544b91b9a4963b7d09
+      internalID: -1046489690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 288cbc45-9d53-4326-aac7-fad37d2cacc0_10
+      name: KirbyNinja_8
       rect:
         serializedVersion: 2
-        x: 62
-        y: 11
-        width: 26
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2
+        y: 9
+        width: 23
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b1f2072d847c52010800000000000000
-      internalID: 1163555194327281435
+      spriteID: 4a563e90e1d979c4eb6fb750fe8823b6
+      internalID: -1625785693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyNinja_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 12
+        width: 24
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89823d1dd27b5ed4ca1c0072572ce0af
+      internalID: 577713516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyNinja_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 12
+        width: 24
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976c27825181f7b499fb81d42686aa39
+      internalID: -1445698377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KirbyNinja_11
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 12
+        width: 29
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9f243436640884e9e9568963408ca1
+      internalID: -1092581144
       vertices: []
       indices: 
       edges: []
@@ -388,7 +413,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6b0776f1c34f1d54d84e5e7f6d8d43d1
     internalID: 0
     vertices: []
     indices: 
@@ -396,19 +421,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      288cbc45-9d53-4326-aac7-fad37d2cacc0_0: -8443156732499748428
-      288cbc45-9d53-4326-aac7-fad37d2cacc0_1: -3087133575919860411
-      288cbc45-9d53-4326-aac7-fad37d2cacc0_10: 1163555194327281435
-      288cbc45-9d53-4326-aac7-fad37d2cacc0_2: 7692776453558476784
-      288cbc45-9d53-4326-aac7-fad37d2cacc0_3: 232152115364179613
-      288cbc45-9d53-4326-aac7-fad37d2cacc0_4: -1664119958030632471
-      288cbc45-9d53-4326-aac7-fad37d2cacc0_5: -7684745051966484089
-      288cbc45-9d53-4326-aac7-fad37d2cacc0_6: -1150404566641150030
-      288cbc45-9d53-4326-aac7-fad37d2cacc0_7: 5335198672089233826
-      288cbc45-9d53-4326-aac7-fad37d2cacc0_8: -4002990930942029055
-      288cbc45-9d53-4326-aac7-fad37d2cacc0_9: 4038159896858208704
+      KirbyNinja_0: 955391747
+      KirbyNinja_1: 1543420851
+      KirbyNinja_10: -1445698377
+      KirbyNinja_11: -1092581144
+      KirbyNinja_2: 1425311743
+      KirbyNinja_3: -2066591388
+      KirbyNinja_4: -926299255
+      KirbyNinja_5: -1523988841
+      KirbyNinja_6: 552628149
+      KirbyNinja_7: -1046489690
+      KirbyNinja_8: -1625785693
+      KirbyNinja_9: 577713516
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

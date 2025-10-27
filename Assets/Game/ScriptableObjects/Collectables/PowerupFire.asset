@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03966581734b6ec4691325a45788a8de, type: 3}
-  m_Name: PowerUp
-  m_EditorClassIdentifier: Assembly-CSharp::PowerUp
-  soundEffect: 2
+  m_Script: {fileID: 11500000, guid: 128bf2c5989e07c4b92cc35a28fcf366, type: 3}
+  m_Name: PowerupFire
+  m_EditorClassIdentifier: Assembly-CSharp::PowerupFire
+  outfit: {fileID: 11400000, guid: af5a647e209c6ac4d899e7e97cbd3613, type: 2}
