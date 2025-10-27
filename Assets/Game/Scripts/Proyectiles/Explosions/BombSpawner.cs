@@ -3,23 +3,16 @@ using UnityEngine.InputSystem;
 
 public class BombSpawner : MonoBehaviour
 {
-   [SerializeField] private GameObject bombPrefab;
-    private Camera cam;
+    [SerializeField] private GameObject prefab;   // El objeto que se va a instanciar
+    [SerializeField] private Transform spawnPoint;
 
-    private void Awake()
-    {
-        cam = Camera.main;
-    }
 
     private void Update()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        if (Mouse.current != null && Mouse.current.rightButton.wasPressedThisFrame)
         {
-            Vector2 mouse = Mouse.current.position.ReadValue();
-            Vector3 world = cam.ScreenToWorldPoint(new Vector3(mouse.x, mouse.y, -cam.transform.position.z));
-            world.z = 0f;
-
-            Instantiate(bombPrefab, world, Quaternion.identity);
+            Instantiate(prefab, spawnPoint.position, spawnPoint.rotation);
         }
     }
+
 }

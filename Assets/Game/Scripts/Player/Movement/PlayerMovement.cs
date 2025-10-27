@@ -23,6 +23,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private Vector3 boxDimensions;
 
+    //Bomb Spawner
+    private Transform bombSpawner;
+
+
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -31,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        bombSpawner = transform.Find("BombSpawner");
         animator = GetComponent<Animator>();
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
@@ -50,6 +55,18 @@ public class PlayerMovement : MonoBehaviour
         // Animator parameters
         animator.SetFloat("Speed", Mathf.Abs(move.x));
         animator.SetBool("Grounded", grounded);
+
+        if (move.x > 0)
+        {
+            sprite.flipX = false;
+            ChangePositionBombSpawner(1f);
+        }
+        // Si se mueve a la izquierda
+        else if (move.x < 0)
+        {
+            sprite.flipX = true;
+            ChangePositionBombSpawner(-1f);
+        }
     }
 
     private void FixedUpdate()
@@ -106,6 +123,15 @@ public class PlayerMovement : MonoBehaviour
     {
         canJumpMultipleTimes = false;
         maxJumpCount = 1;
+    }
+    
+    private void ChangePositionBombSpawner(float newX)
+    {
+        if (bombSpawner == null) return;
+
+        Vector3 pos = bombSpawner.localPosition;
+        pos.x = newX;
+        bombSpawner.localPosition = pos;
     }
 
     private void OnDrawGizmos()
