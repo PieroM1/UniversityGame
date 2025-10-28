@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        SceneManager.LoadScene("EscenaPrueba");
+        SceneManager.LoadScene("PruebaPowerups");
     }
 
     public void UpdateScore(int amount)

@@ -8,6 +8,7 @@ TagManager:
   - DeadZone
   - Checkpoint
   - Enemy
+  - BombSpawner
   layers:
   - Default
   - TransparentFX
