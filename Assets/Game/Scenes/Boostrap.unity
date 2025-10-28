@@ -278,9 +278,9 @@ MonoBehaviour:
   - key: 0
     clip: {fileID: 8300000, guid: 578e87c37e803464ea1d51c69f3fb5db, type: 3}
   - key: 1
-    clip: {fileID: 8300000, guid: 61fb4ffc37a2b8c488b4f312a17b34ba, type: 3}
+    clip: {fileID: 8300000, guid: 38c34eae15bd948459b5cf068233d79b, type: 3}
   - key: 2
-    clip: {fileID: 8300000, guid: afdc884f8c63b344ea30cad4d86d219d, type: 3}
+    clip: {fileID: 8300000, guid: 61fb4ffc37a2b8c488b4f312a17b34ba, type: 3}
   - key: 5
     clip: {fileID: 8300000, guid: 620062beffa55d348a9ef293e5729a1d, type: 3}
   soundEffects:
