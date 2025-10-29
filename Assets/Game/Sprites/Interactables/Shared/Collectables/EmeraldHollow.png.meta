@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 9fe11776c268d7a4ca14f35fe1104aaf
+guid: 062a246d89471384b8d74af3ab1980b3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7972578118019343251
-    second: c5d3a7b4-43e5-46e5-9b39-fcd1e56f51f0_0
-  - first:
-      213: 4981473305136482568
-    second: c5d3a7b4-43e5-46e5-9b39-fcd1e56f51f0_1
-  - first:
-      213: -7656499514686297685
-    second: c5d3a7b4-43e5-46e5-9b39-fcd1e56f51f0_2
-  - first:
-      213: -4489700719247250069
-    second: c5d3a7b4-43e5-46e5-9b39-fcd1e56f51f0_3
+      213: -5695144723336970235
+    second: f8d685c6-c1c0-444b-b87d-fbab630f003d_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -135,89 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rings_0
+      name: f8d685c6-c1c0-444b-b87d-fbab630f003d_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 48
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ccf90fa181716104ba002f82c837929a
-      internalID: 236238175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rings_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fdfa904f0d214b64e9d1416f6938ce47
-      internalID: 1960210675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rings_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fd8c396a038344459b6b4df5930c266
-      internalID: -78102482
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rings_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57405fae665f213499019cee290d92d6
-      internalID: -954322920
+      spriteID: 5004f0d5c08c6f0b0800000000000000
+      internalID: -5695144723336970235
       vertices: []
       indices: 
       edges: []
@@ -226,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 99e7eb2f077badb49b507d1d6f31a69f
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -234,14 +159,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Rings_0: 236238175
-      Rings_1: 1960210675
-      Rings_2: -78102482
-      Rings_3: -954322920
+      f8d685c6-c1c0-444b-b87d-fbab630f003d_0: -5695144723336970235
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
