@@ -21,14 +21,9 @@ public class LevelManager : MonoBehaviour
         collectedEmeralds++;
         GameManager.Instance.UpdateScore(emeraldValue);
         UIManager.Instance.UpdateEmeraldIcons(collectedEmeralds);
-
-        if (collectedEmeralds >= totalEmeralds)
-        {
-            LevelComplete();
-        }
     }
 
-    private void LevelComplete()
+    public void LevelComplete()
     {
         Debug.Log("Nivel completado");
     }

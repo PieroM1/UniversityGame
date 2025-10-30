@@ -9,5 +9,6 @@ public enum SFXConstants
     RESPAWN,
     SPRING,
     EMERALD_COLLECT,
-    PERFECT
+    PERFECT,
+    DASH
 }
