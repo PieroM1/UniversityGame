@@ -5,11 +5,24 @@ public class Explosion2 : MonoBehaviour
 {
     [SerializeField] private float radius = 3;
     [SerializeField] private float power = 800;
-    [SerializeField] private float delaySeconds = 3f;
+    [SerializeField] private float delaySeconds = 4f;
+    private Animator animator;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     private void OnEnable()
     {
+        StartCoroutine(AnimateExplosion());
         StartCoroutine(ExplodeAfterDelay());
+    }
+
+    private IEnumerator AnimateExplosion()
+    {
+        yield return new WaitForSeconds(delaySeconds - 0.5f);
+        animator.SetBool("Exploded", true);
     }
 
     private IEnumerator ExplodeAfterDelay()
@@ -23,7 +36,6 @@ public class Explosion2 : MonoBehaviour
     {
         Vector2 explosionPos = transform.position;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(explosionPos, radius);
-
         foreach (Collider2D collider in colliders)
         {
             Rigidbody2D rb2D = collider.GetComponent<Rigidbody2D>();

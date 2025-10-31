@@ -81,4 +81,18 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: EnableAttackHitbox()
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: 04f87822ce9470e498bc8b9e65494b41, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.6666667
+    functionName: DisableAttackHitbox()
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: 04f87822ce9470e498bc8b9e65494b41, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

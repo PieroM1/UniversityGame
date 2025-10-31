@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class LevelManager : MonoBehaviour
 
     public void LevelComplete()
     {
-        Debug.Log("Nivel completado");
+        UIManager.Instance.ShowHUD(false);
+        SceneManager.LoadScene("MainMenu");
     }
 }

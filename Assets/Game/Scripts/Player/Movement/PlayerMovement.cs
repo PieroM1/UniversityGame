@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -29,6 +30,9 @@ public class PlayerMovement : MonoBehaviour
 
     //Attack Abilitity
     private bool canUseAttackAbility = false;
+    private const float defaultAttackCooldown = 1f;
+    private float attackCooldown;
+    private float lastAttackTime = -Mathf.Infinity;
 
     //Dash Ability
     private bool canUseDashAbility = false;
@@ -64,26 +68,16 @@ public class PlayerMovement : MonoBehaviour
         if (move.x != 0)
         {
             sprite.flipX = move.x < 0;
+            ChangePositionBombSpawner(1f * Mathf.Sign(move.x));
         }
         if (jumpAction.WasPressedThisFrame() && grounded) Jump();
-        else if (jumpAction.WasPressedThisFrame() && !grounded && maxJumpCount > 1) DoubleJump();
+        else if (jumpAction.WasPressedThisFrame() && !grounded && maxJumpCount > 1) ExtraJump();
         if (dashAction.WasPressedThisFrame() && canUseDashAbility && Time.time >= lastDashTime + dashCooldown) Dash();
+        if(attackAction.WasPressedThisFrame() && canUseAttackAbility && Time.time >= lastAttackTime + attackCooldown) Attack();
         // Animator parameters
         animator.SetInteger("SpeedX", (int)move.x);
         animator.SetFloat("SpeedY", rb2D.linearVelocityY);
         animator.SetBool("Grounded", grounded);
-
-        if (move.x > 0)
-        {
-            sprite.flipX = false;
-            ChangePositionBombSpawner(1f);
-        }
-        // Si se mueve a la izquierda
-        else if (move.x < 0)
-        {
-            sprite.flipX = true;
-            ChangePositionBombSpawner(-1f);
-        }
     }
 
     private void FixedUpdate()
@@ -95,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
             jumpCounter = 0;
         }
     }
-
+    //Jump
     private void Jump()
     {
         jumpCounter++;
@@ -103,8 +97,8 @@ public class PlayerMovement : MonoBehaviour
         rb2D.linearVelocityY = jumpForce;
         animator.SetBool("ExtraJump", false);
     }
-
-    private void DoubleJump()
+    //Extra Jump
+    private void ExtraJump()
     {
         if (jumpCounter == 0) jumpCounter++;
         if (jumpCounter < maxJumpCount)
@@ -115,7 +109,6 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("ExtraJump", true);
         }
     }
-
     public void EnableMultipleJumps(short maxJumpCount, float extraJumpsHeight)
     {
         this.maxJumpCount = maxJumpCount;
@@ -125,6 +118,23 @@ public class PlayerMovement : MonoBehaviour
     {
         maxJumpCount = 1;
     }
+    //Attack
+    private void Attack()
+    {
+        AudioManager.Instance.PlaySFX(SFXConstants.DAMAGE);
+        animator.SetBool("Attack", true);
+        lastAttackTime = Time.time;
+    }
+    private void EnableAttackHitbox()
+    {
+        //Todo: Enable attack hitbox
+    }
+    private void DisableAttackHitbox()
+    {
+       //Todo: Disable attack hitbox
+        animator.SetBool("Attack", false);
+    }
+
 
     public void EnableAttackAbility()
     {
@@ -134,18 +144,7 @@ public class PlayerMovement : MonoBehaviour
     {
         canUseAttackAbility = false;
     }
-
-    public void EnableDashAbility(float dashDistance = defaultDashDistance, float dashCooldown = defaultDashCooldown)
-    {
-        this.dashDistance = dashDistance;
-        canUseDashAbility = true;
-    }
-    public void DisableDashAbility()
-    {
-        this.dashDistance = defaultDashDistance;
-        canUseDashAbility = false;
-    }
-
+    //Dash
     private void Dash()
     {
         AudioManager.Instance.PlaySFX(SFXConstants.DASH);
@@ -165,7 +164,17 @@ public class PlayerMovement : MonoBehaviour
         }
         animator.SetBool("Dash", false);
     }
-
+    public void EnableDashAbility(float dashDistance = defaultDashDistance, float dashCooldown = defaultDashCooldown)
+    {
+        this.dashDistance = dashDistance;
+        canUseDashAbility = true;
+    }
+    public void DisableDashAbility()
+    {
+        this.dashDistance = defaultDashDistance;
+        canUseDashAbility = false;
+    }
+    //Bomb
     private void ChangePositionBombSpawner(float newX)
     {
         if (bombSpawner == null) return;

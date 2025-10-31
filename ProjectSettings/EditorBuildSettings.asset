@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Scenes/PruebaPowerups.unity
     guid: 4e7cf4ea22e2a0f41bcf186b5f82c0ba
+  - enabled: 1
+    path: Assets/Game/Scenes/MainMenu.unity
+    guid: 523468d8225082a4abb64485910972ce
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: e05c0cdfe61bdfb4a9106edf7e9fdd69, type: 3}
   m_UseUCBPForAssetBundles: 0
