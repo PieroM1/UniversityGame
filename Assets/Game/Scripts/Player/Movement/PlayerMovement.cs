@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,22 +11,36 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sprite;
     private InputAction moveAction;
     private InputAction jumpAction;
+    private InputAction dashAction;
+    private InputAction attackAction;
     //Movement parameters
     [SerializeField] private float speedX = 5f;
     [SerializeField] private float jumpForce = 7f;
-    private bool jumped = false;
     private short jumpCounter = 0;
     [SerializeField] private short maxJumpCount = 1;
-    private bool canJumpMultipleTimes;
     [SerializeField] private float extraJumpsHeight = 0.7f; //Jump height multiplier for extra jumps
-    private bool grounded;
     // Ground check parameters
-    [SerializeField] private LayerMask isGround;
+    private bool grounded;
+    [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private Vector3 boxDimensions;
 
     //Bomb Spawner
     private Transform bombSpawner;
+
+    //Attack Abilitity
+    private bool canUseAttackAbility = false;
+    private const float defaultAttackCooldown = 1f;
+    private float attackCooldown;
+    private float lastAttackTime = -Mathf.Infinity;
+
+    //Dash Ability
+    private bool canUseDashAbility = false;
+    private const float defaultDashCooldown = 1f;
+    private float dashCooldown;
+    private float lastDashTime = -Mathf.Infinity;
+    private const float defaultDashDistance = 3f;
+    private float dashDistance;
 
 
     private void Awake()
@@ -39,6 +55,10 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
+        dashAction = InputSystem.actions.FindAction("Dash");
+        attackAction = InputSystem.actions.FindAction("Attack");
+        dashDistance = defaultDashDistance;
+        dashCooldown = defaultDashCooldown;
     }
 
     private void Update()
@@ -48,58 +68,37 @@ public class PlayerMovement : MonoBehaviour
         if (move.x != 0)
         {
             sprite.flipX = move.x < 0;
+            ChangePositionBombSpawner(1f * Mathf.Sign(move.x));
         }
         if (jumpAction.WasPressedThisFrame() && grounded) Jump();
-        else if (jumpAction.WasPressedThisFrame() && !grounded && canJumpMultipleTimes) DoubleJump();
-
+        else if (jumpAction.WasPressedThisFrame() && !grounded && maxJumpCount > 1) ExtraJump();
+        if (dashAction.WasPressedThisFrame() && canUseDashAbility && Time.time >= lastDashTime + dashCooldown) Dash();
+        if(attackAction.WasPressedThisFrame() && canUseAttackAbility && Time.time >= lastAttackTime + attackCooldown) Attack();
         // Animator parameters
-        animator.SetFloat("Speed", Mathf.Abs(move.x));
+        animator.SetInteger("SpeedX", (int)move.x);
+        animator.SetFloat("SpeedY", rb2D.linearVelocityY);
         animator.SetBool("Grounded", grounded);
-
-        if (move.x > 0)
-        {
-            sprite.flipX = false;
-            ChangePositionBombSpawner(1f);
-        }
-        // Si se mueve a la izquierda
-        else if (move.x < 0)
-        {
-            sprite.flipX = true;
-            ChangePositionBombSpawner(-1f);
-        }
     }
 
     private void FixedUpdate()
     {
-        grounded = Physics2D.OverlapBox(groundCheck.position, boxDimensions, 0f, isGround);
-
-        if (!jumped && grounded)
-        {
-            animator.SetBool("Jump", false);
-            animator.SetBool("ExtraJump", false);
-            jumped = false;
-            jumpCounter = 0;
-        }
-        else if (!jumped && !grounded)
-        {
-            jumped = false;
-        }
-        else jumped = grounded;
-    }
-
-    private void Jump()
-    {
+        grounded = Physics2D.OverlapBox(groundCheck.position, boxDimensions, 0f, groundLayer);
         if (grounded)
         {
-            jumpCounter++;
-            AudioManager.Instance.PlaySFX(SFXConstants.JUMP);
-            rb2D.linearVelocityY = jumpForce;
-            animator.SetBool("Jump", true);
-            jumped = true;
+            animator.SetBool("ExtraJump", false);
+            jumpCounter = 0;
         }
     }
-
-    private void DoubleJump()
+    //Jump
+    private void Jump()
+    {
+        jumpCounter++;
+        AudioManager.Instance.PlaySFX(SFXConstants.JUMP);
+        rb2D.linearVelocityY = jumpForce;
+        animator.SetBool("ExtraJump", false);
+    }
+    //Extra Jump
+    private void ExtraJump()
     {
         if (jumpCounter == 0) jumpCounter++;
         if (jumpCounter < maxJumpCount)
@@ -108,23 +107,74 @@ public class PlayerMovement : MonoBehaviour
             AudioManager.Instance.PlaySFX(SFXConstants.JUMP);
             rb2D.linearVelocityY = jumpForce * extraJumpsHeight;
             animator.SetBool("ExtraJump", true);
-            animator.SetBool("Jump", false);
         }
     }
-
     public void EnableMultipleJumps(short maxJumpCount, float extraJumpsHeight)
     {
-        canJumpMultipleTimes = true;
         this.maxJumpCount = maxJumpCount;
         this.extraJumpsHeight = extraJumpsHeight;
     }
-
     public void DisableMultipleJumps()
     {
-        canJumpMultipleTimes = false;
         maxJumpCount = 1;
     }
-    
+    //Attack
+    private void Attack()
+    {
+        AudioManager.Instance.PlaySFX(SFXConstants.DAMAGE);
+        animator.SetBool("Attack", true);
+        lastAttackTime = Time.time;
+    }
+    private void EnableAttackHitbox()
+    {
+        //Todo: Enable attack hitbox
+    }
+    private void DisableAttackHitbox()
+    {
+       //Todo: Disable attack hitbox
+        animator.SetBool("Attack", false);
+    }
+
+
+    public void EnableAttackAbility()
+    {
+        canUseAttackAbility = true;
+    }
+    public void DisableAttackAbility()
+    {
+        canUseAttackAbility = false;
+    }
+    //Dash
+    private void Dash()
+    {
+        AudioManager.Instance.PlaySFX(SFXConstants.DASH);
+        animator.SetBool("Dash", true);
+        StartCoroutine(DashMove());
+        lastDashTime = Time.time;
+    }
+
+    private IEnumerator DashMove()
+    {
+        float dashDirection = sprite.flipX ? -1f : 1f;
+        float dashEndTime = Time.time + 0.2f;
+        while (Time.time < dashEndTime)
+        {
+            rb2D.position += new Vector2(dashDistance * dashDirection * Time.deltaTime / 0.2f, 0f);
+            yield return null;
+        }
+        animator.SetBool("Dash", false);
+    }
+    public void EnableDashAbility(float dashDistance = defaultDashDistance, float dashCooldown = defaultDashCooldown)
+    {
+        this.dashDistance = dashDistance;
+        canUseDashAbility = true;
+    }
+    public void DisableDashAbility()
+    {
+        this.dashDistance = defaultDashDistance;
+        canUseDashAbility = false;
+    }
+    //Bomb
     private void ChangePositionBombSpawner(float newX)
     {
         if (bombSpawner == null) return;

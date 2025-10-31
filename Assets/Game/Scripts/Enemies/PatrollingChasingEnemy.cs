@@ -2,17 +2,17 @@ using UnityEngine;
 
 public class PatrollingChasingEnemy : MonoBehaviour
 {
-      private enum State { Patrol, Chase }
+    private enum State { Patrol, Chase }
 
-    [Header("Movimiento")]
+    [Header("Movement Settings")]
     [SerializeField] private float patrolSpeed = 2f;
     [SerializeField] private float chaseSpeed = 4f;
     [SerializeField] private Transform limit1;
     [SerializeField] private Transform limit2;
 
-    [Header("Detección (solo distancia)")]
-    [SerializeField] private Transform player;          // Asignar o tag "Player"
-    [SerializeField] private float detectionRange = 5f; // Radio de detección (mundo)
+    [Header("Player Detection")]
+    [SerializeField] private Transform player;
+    [SerializeField] private float detectionRange = 5f; // Detection radius (world units)
 
     private float leftX, rightX;   // límites en mundo
     private int dir = 1;           // -1 izquierda, 1 derecha
@@ -28,11 +28,9 @@ public class PatrollingChasingEnemy : MonoBehaviour
 
     private void Start()
     {
-        // Límites en espacio de mundo (¡clave!)
-        leftX  = Mathf.Min(limit1.position.x, limit2.position.x);
+        leftX = Mathf.Min(limit1.position.x, limit2.position.x);
         rightX = Mathf.Max(limit1.position.x, limit2.position.x);
 
-        // Autodetectar jugador si no se asignó
         if (!player)
         {
             var p = GameObject.FindGameObjectWithTag("Player");
@@ -54,7 +52,7 @@ public class PatrollingChasingEnemy : MonoBehaviour
         else Patrol();
 
         // Volteo del sprite según la velocidad
-        sprite.flipX = rb.linearVelocity.x < 0f;
+        sprite.flipX = rb.linearVelocity.x > 0f;
     }
 
     private void Patrol()
@@ -72,7 +70,7 @@ public class PatrollingChasingEnemy : MonoBehaviour
     {
         if (!player) return;
 
-        float enemyX  = transform.position.x;
+        float enemyX = transform.position.x;
         float playerX = player.position.x;
 
         // Objetivo clampeado a la zona permitida
@@ -90,7 +88,7 @@ public class PatrollingChasingEnemy : MonoBehaviour
 
         // Evitar que “se escape” por física: si está en el borde y empuja hacia afuera, no mover
         bool pushingOutside =
-            (enemyX <= leftX  && chaseDir < 0) ||
+            (enemyX <= leftX && chaseDir < 0) ||
             (enemyX >= rightX && chaseDir > 0);
 
         rb.linearVelocity = new Vector2(pushingOutside ? 0f : chaseDir * chaseSpeed, rb.linearVelocity.y);

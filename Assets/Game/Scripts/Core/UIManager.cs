@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -9,6 +10,13 @@ public class UIManager : MonoBehaviour
     [SerializeField] private RectTransform mainUIContainer;
     [SerializeField] private RectTransform overlayUIContainer;
     [SerializeField] private TextMeshProUGUI txtScore;
+    
+    [Header("Collectables UI")]
+    [SerializeField] private Image[] emeraldIcons;
+    [SerializeField] private Sprite emeraldOutlineSprite;
+    [SerializeField] private Sprite emeraldFilledSprite;
+    
+    private Camera mainCamera;
 
     private void Awake()
     {
@@ -16,6 +24,7 @@ public class UIManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            GetComponent<Canvas>().worldCamera = mainCamera;
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -37,5 +46,21 @@ public class UIManager : MonoBehaviour
     public void UpdateScoreUI(int score)
     {
         txtScore.text = score.ToString();
+    }
+
+    public void SetCamera(Camera camera)
+    {
+        mainCamera = camera;
+        GetComponent<Canvas>().worldCamera = mainCamera;
+    }
+
+    public void UpdateEmeraldIcons(int collected)
+    {
+        for (int i = 0; i < emeraldIcons.Length; i++)
+        {
+            emeraldIcons[i].sprite = (i < collected)
+                ? emeraldFilledSprite
+                : emeraldOutlineSprite;
+        }
     }
 }

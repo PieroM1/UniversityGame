@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a34a9b8ca5fef2a428aace7de6801bbb, type: 3}
+  m_Name: Outfit_Ninja
+  m_EditorClassIdentifier: Assembly-CSharp::Outfit
+  idleClip: {fileID: 7400000, guid: f39202c7c88e565429850d3868e4e694, type: 2}
+  runClip: {fileID: 7400000, guid: 9967fb8f8969f694889678d5cebe8f37, type: 2}
+  jumpClip: {fileID: 7400000, guid: 46456b85adc08db4ca9da8b60d874ecf, type: 2}
+  fallClip: {fileID: 7400000, guid: b0f524a22d22f494286aefd111a11a27, type: 2}
+  extraJumpClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  dashClip: {fileID: 7400000, guid: 883ff61f35dc8644a92af5ef856ad821, type: 2}

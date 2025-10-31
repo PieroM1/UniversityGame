@@ -8,7 +8,7 @@ public class Emerald : CollectableData
         LevelManager levelManager = FindAnyObjectByType<LevelManager>();
         if (levelManager != null)
         {
-            levelManager.CollectItem();
+            levelManager.CollectEmerald();
         }
     }
 }

@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
     public AudioConstants backgroundMusic;
-    public int totalEmeralds = 3;
+    private int totalEmeralds = 3;
     private int collectedEmeralds = 0;
     [SerializeField] private int emeraldValue = 100;
 
@@ -12,21 +13,20 @@ public class LevelManager : MonoBehaviour
         AudioManager.Instance.ChangeBackgroundMusic(backgroundMusic);
         collectedEmeralds = 0;
         UIManager.Instance.ShowHUD(true);
+        var camera = FindFirstObjectByType<Camera>();
+        UIManager.Instance.SetCamera(camera);
     }
 
-    public void CollectItem()
+    public void CollectEmerald()
     {
         collectedEmeralds++;
         GameManager.Instance.UpdateScore(emeraldValue);
-
-        if (collectedEmeralds >= totalEmeralds)
-        {
-            LevelComplete();
-        }
+        UIManager.Instance.UpdateEmeraldIcons(collectedEmeralds);
     }
 
-    private void LevelComplete()
+    public void LevelComplete()
     {
-        Debug.Log("Nivel completado");
+        UIManager.Instance.ShowHUD(false);
+        SceneManager.LoadScene("MainMenu");
     }
 }
