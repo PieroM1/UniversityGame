@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private short maxJumpCount = 1;
     [SerializeField] private float extraJumpsHeight = 0.7f; //Jump height multiplier for extra jumps
     // Ground check parameters
-    private bool grounded;
+    public bool grounded;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private Vector3 boxDimensions;

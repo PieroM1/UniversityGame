@@ -3747,6 +3747,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6627122382688543299, guid: f116bf675d883b84fa5b88e3d87d3c23, type: 3}
   m_PrefabInstance: {fileID: 1724800711}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1726566620 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6653196192331683579, guid: bc75a711fec959f409be54f622d89d6f, type: 3}
+  m_PrefabInstance: {fileID: 8184865950349879526}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1851166320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42368,6 +42373,14 @@ PrefabInstance:
     - target: {fileID: 7264939814529902627, guid: bc75a711fec959f409be54f622d89d6f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760155570679678024, guid: bc75a711fec959f409be54f622d89d6f, type: 3}
+      propertyPath: spawnCheck
+      value: 
+      objectReference: {fileID: 1726566620}
+    - target: {fileID: 7760155570679678024, guid: bc75a711fec959f409be54f622d89d6f, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 8151143043173642396, guid: bc75a711fec959f409be54f622d89d6f, type: 3}
       propertyPath: m_LocalPosition.x
