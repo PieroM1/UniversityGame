@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -21,13 +20,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private short maxJumpCount = 1;
     [SerializeField] private float extraJumpsHeight = 0.7f; //Jump height multiplier for extra jumps
     // Ground check parameters
-    public bool grounded;
+    private bool grounded;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private Vector3 boxDimensions;
 
     //Bomb Spawner
-    private Transform bombSpawner;
+    private Transform bombSpawnPosition;
 
     //Attack Abilitity
     private bool canUseAttackAbility = false;
@@ -52,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        bombSpawner = transform.Find("BombSpawnPosition");
+        bombSpawnPosition = transform.Find("BombSpawnPosition");
         animator = GetComponent<Animator>();
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
@@ -68,8 +67,9 @@ public class PlayerMovement : MonoBehaviour
         rb2D.linearVelocityX = move.x * speedX;
         if (move.x != 0)
         {
-            sprite.flipX = move.x < 0;
-            ChangePositionBombSpawner(1f * Mathf.Sign(move.x));
+            int direction = (int)move.x;
+            sprite.flipX = direction < 0;
+            ChangePositionBombSpawner(direction);
         }
         if (jumpAction.WasPressedThisFrame() && grounded) Jump();
         else if (jumpAction.WasPressedThisFrame() && !grounded && maxJumpCount > 1) ExtraJump();
@@ -88,7 +88,6 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("ExtraJump", false);
             jumpCounter = 0;
-            Debug.Log("Funcion activada");
         }
     }
     //Jump
@@ -179,11 +178,11 @@ public class PlayerMovement : MonoBehaviour
     //Bomb
     private void ChangePositionBombSpawner(float newX)
     {
-        if (bombSpawner == null) return;
+        if (bombSpawnPosition == null) return;
 
-        Vector3 pos = bombSpawner.localPosition;
+        Vector3 pos = bombSpawnPosition.localPosition;
         pos.x = newX;
-        bombSpawner.localPosition = pos;
+        bombSpawnPosition.localPosition = pos;
     }
 
     private void OnDrawGizmos()
