@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -20,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private short maxJumpCount = 1;
     [SerializeField] private float extraJumpsHeight = 0.7f; //Jump height multiplier for extra jumps
     // Ground check parameters
-    private bool grounded;
+    public bool grounded;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private Vector3 boxDimensions;
@@ -51,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        bombSpawner = transform.Find("BombSpawner");
+        bombSpawner = transform.Find("BombSpawnPosition");
         animator = GetComponent<Animator>();
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
@@ -87,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("ExtraJump", false);
             jumpCounter = 0;
+            Debug.Log("Funcion activada");
         }
     }
     //Jump

@@ -46,4 +46,30 @@ public class MovingPlatform : MonoBehaviour
         animator.SetBool("isMoving", true);
         isMoving = true;
     }
+
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.transform.SetParent(this.transform);
+        }
+
+        if (other.gameObject.CompareTag("Bomb"))
+        {
+            other.transform.SetParent(this.transform);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.transform.SetParent(null);
+        }
+        if (other.gameObject.CompareTag("Bomb"))
+        {
+            other.transform.SetParent(null);
+        }
+    }
 }

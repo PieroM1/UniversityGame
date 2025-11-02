@@ -233,6 +233,7 @@ MonoBehaviour:
   jumpForce: 7
   maxJumpCount: 1
   extraJumpsHeight: 0.7
+  grounded: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -323,6 +324,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BombSpawner
   prefab: {fileID: 4334238302761479270, guid: 68c0352a7498c2849939d2b3e1278644, type: 3}
   spawnPoint: {fileID: 4340089436317487490}
+  ground: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  spawnCheck: {fileID: 0}
+  boxDimensions: {x: 0.7, y: 0.1, z: 0}
 --- !u!1 &7980480313085824727
 GameObject:
   m_ObjectHideFlags: 0

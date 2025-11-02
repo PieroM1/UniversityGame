@@ -9,6 +9,7 @@ TagManager:
   - Checkpoint
   - Enemy
   - BombSpawner
+  - Bomb
   layers:
   - Default
   - TransparentFX
