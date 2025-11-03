@@ -29,7 +29,7 @@ public class Explosion2 : MonoBehaviour
     {
         yield return new WaitForSeconds(delaySeconds);
         ExplodeObject();
-        Destroy(gameObject); // opcional: destruye la bomba tras explotar
+        Destroy(gameObject);
     }
 
     void ExplodeObject()
@@ -44,5 +44,11 @@ public class Explosion2 : MonoBehaviour
                 rb2D.AddExplosionForce(power, explosionPos, radius);
             }
         }
+    }
+
+    public void ExplodeTouch()
+    {
+        ExplodeObject();
+        Destroy(gameObject);
     }
 }

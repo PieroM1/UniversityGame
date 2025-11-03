@@ -118,7 +118,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -859884479
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 478380878, guid: 35100735945fce642bf207dd1015ce68, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -183,7 +183,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -233,6 +233,7 @@ MonoBehaviour:
   jumpForce: 7
   maxJumpCount: 1
   extraJumpsHeight: 0.7
+  grounded: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -323,6 +324,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BombSpawner
   prefab: {fileID: 4334238302761479270, guid: 68c0352a7498c2849939d2b3e1278644, type: 3}
   spawnPoint: {fileID: 4340089436317487490}
+  ground: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  spawnCheck: {fileID: 0}
+  boxDimensions: {x: 0.7, y: 0.1, z: 0}
 --- !u!1 &7980480313085824727
 GameObject:
   m_ObjectHideFlags: 0

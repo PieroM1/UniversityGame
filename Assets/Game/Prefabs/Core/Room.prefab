@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 9165032467934934660}
   - component: {fileID: 7443003600311029657}
   - component: {fileID: 60728030429242266}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VirtualCameraR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2088751258216163008
 Transform:
   m_ObjectHideFlags: 0
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 1358456378719192368}
   - component: {fileID: 6370731459108555367}
   - component: {fileID: 7506390934267368632}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
