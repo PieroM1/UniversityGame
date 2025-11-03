@@ -238,7 +238,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 789445409
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -968209599, guid: 258bdbe5cf94b56449a8316cd2c8079d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -358,7 +358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab0a9ba9e03c50478021791c5fbbbcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlyingEnemy
-  speed: 2
+  speed: 2.5
   chase: 0
   startingPoint: {fileID: 8310344651010468108}
 --- !u!1 &7024195044488707607
