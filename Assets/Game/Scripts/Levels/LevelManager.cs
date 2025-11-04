@@ -15,6 +15,7 @@ public class LevelManager : MonoBehaviour
         UIManager.Instance.ShowHUD(true);
         var camera = FindFirstObjectByType<Camera>();
         UIManager.Instance.SetCamera(camera);
+        UIManager.Instance.ResetEmeraldIcons();
     }
 
     public void CollectEmerald()

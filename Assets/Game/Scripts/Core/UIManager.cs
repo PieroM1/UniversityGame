@@ -63,4 +63,9 @@ public class UIManager : MonoBehaviour
                 : emeraldOutlineSprite;
         }
     }
+
+    public void ResetEmeraldIcons()
+    {
+        UpdateEmeraldIcons(0);
+    }
 }

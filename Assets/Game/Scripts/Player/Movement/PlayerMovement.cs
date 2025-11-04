@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
         if (jumpAction.WasPressedThisFrame() && grounded) Jump();
         else if (jumpAction.WasPressedThisFrame() && !grounded && maxJumpCount > 1) ExtraJump();
         if (dashAction.WasPressedThisFrame() && canUseDashAbility && Time.time >= lastDashTime + dashCooldown) Dash();
-        if(attackAction.WasPressedThisFrame() && canUseAttackAbility && Time.time >= lastAttackTime + attackCooldown) Attack();
+        if (attackAction.WasPressedThisFrame() && canUseAttackAbility && Time.time >= lastAttackTime + attackCooldown) Attack();
         // Animator parameters
         animator.SetInteger("SpeedX", (int)move.x);
         animator.SetFloat("SpeedY", rb2D.linearVelocityY);
@@ -132,7 +132,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void DisableAttackHitbox()
     {
-       //Todo: Disable attack hitbox
+        //Todo: Disable attack hitbox
         animator.SetBool("Attack", false);
     }
 
@@ -158,11 +158,13 @@ public class PlayerMovement : MonoBehaviour
     {
         float dashDirection = sprite.flipX ? -1f : 1f;
         float dashEndTime = Time.time + 0.2f;
+
         while (Time.time < dashEndTime)
         {
-            rb2D.position += new Vector2(dashDistance * dashDirection * Time.deltaTime / 0.2f, 0f);
-            yield return null;
+            rb2D.MovePosition(rb2D.position + new Vector2(dashDistance * dashDirection * Time.fixedDeltaTime / 0.2f, 0f));
+            yield return new WaitForFixedUpdate();
         }
+
         animator.SetBool("Dash", false);
     }
     public void EnableDashAbility(float dashDistance = defaultDashDistance, float dashCooldown = defaultDashCooldown)

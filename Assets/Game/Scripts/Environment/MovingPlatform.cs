@@ -6,8 +6,8 @@ public class MovingPlatform : MonoBehaviour
     private Vector3 targetPosition;
     [SerializeField] private Transform pointA;
     [SerializeField] private Transform pointB;
-    [SerializeField] private float speed = 2f;
-    [SerializeField] private float waitTime = 1f;
+    [SerializeField] private float speed = 3f;
+    [SerializeField] private float waitTime = 1.5f;
     private bool isMoving = true;
     private static WaitForSeconds _waitForSeconds;
     private Animator animator;
