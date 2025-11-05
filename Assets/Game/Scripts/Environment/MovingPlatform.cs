@@ -27,6 +27,7 @@ public class MovingPlatform : MonoBehaviour
     void MovePlatform()
     {
         if (!isMoving) return;
+        animator.SetBool("isMoving", true);
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
