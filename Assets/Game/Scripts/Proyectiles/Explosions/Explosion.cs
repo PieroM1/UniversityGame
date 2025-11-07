@@ -1,31 +1,48 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Explosion : MonoBehaviour
 {
-    [SerializeField] private float radius = 3;
-    [SerializeField] private float power = 800;
+    [SerializeField] private float bounceForce = 10f;
+    [SerializeField] private float delaySeconds = 4f;
 
-    void Update()
+    private Animator animator;
+
+    private void Awake()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        animator = GetComponent<Animator>();
+    }
+
+    private IEnumerator AnimateExplosion()
+    {
+        yield return new WaitForSeconds(delaySeconds - 0.5f);
+        animator.SetBool("Exploded", true);
+    }
+
+    private IEnumerator ExplodeAfterDelay()
+    {
+        yield return new WaitForSeconds(delaySeconds);
+        Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
         {
-            ExplodeObject();
+            HandlePlayerBounce(collision.gameObject);
         }
     }
 
-    void ExplodeObject()
+    private void HandlePlayerBounce(GameObject player)
     {
-        Vector2 explosionPos = transform.position;
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(explosionPos, radius);
+        Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
 
-        foreach (Collider2D collider in colliders)
+        if (rb)
         {
-            Rigidbody2D rb2D = collider.GetComponent<Rigidbody2D>();
-            if (rb2D != null)
-            {
-                rb2D.AddExplosionForce(power, explosionPos, radius);
-            }
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+
+            rb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
         }
     }
 }

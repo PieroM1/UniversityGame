@@ -74,5 +74,8 @@ TagManager:
   - name: UI
     uniqueID: 1013190875
     locked: 0
+  - name: Bomb
+    uniqueID: 1017751587
+    locked: 0
   m_RenderingLayers:
   - Default

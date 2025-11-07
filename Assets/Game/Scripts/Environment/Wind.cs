@@ -2,65 +2,35 @@ using UnityEngine;
 using System.Collections;
 public class Wind : MonoBehaviour
 {
-    [Header("Wind Object")]
-    [SerializeField] private GameObject windObject;
+    public AreaEffector2D effector;
+    public SpriteRenderer spriteRenderer;
+    public float tiempoEncendido = 1f;
+    public float tiempoApagado = 3f;
 
-    [Header("Timing Settings")]
-    [SerializeField] private float timeTurnedOn = 2f;
-    [SerializeField] private float timeTurnedOff = 5f;
-
-    private float timer;
-    private bool isActive = true;
-    private bool isDisabled = false;
-
-    private void Start()
+    void Start()
     {
-        if (windObject == null)
-            windObject = gameObject;
+        if (effector == null)
+            effector = GetComponent<AreaEffector2D>();
 
-        timer = timeTurnedOn;
-        SetState(true);
+        if (spriteRenderer == null)
+            spriteRenderer = GetComponent<SpriteRenderer>();
+
+        StartCoroutine(Ciclo());
     }
 
-    private void Update()
+    System.Collections.IEnumerator Ciclo()
     {
-        if (isDisabled) return;
-        
-        timer -= Time.deltaTime;
-
-        if (timer <= 0f)
+        while (true)
         {
-            ToogleState();
-        }
-    }
+            // Encender
+            effector.enabled = true;
+            spriteRenderer.enabled = true;
+            yield return new WaitForSeconds(tiempoEncendido);
 
-    private void SetState(bool state)
-    {
-        windObject.SetActive(state);
-    }
-
-    private void ToogleState()
-    {
-        isActive = !isActive;
-        windObject.SetActive(isActive);
-        timer = isActive ? timeTurnedOn : timeTurnedOff;
-    }
-
-    public void DisableWind()
-    {
-        isDisabled = true;
-        SetState(false);
-        timer = float.MaxValue; // Prevent further toggling
-    }
-
-    public void EnableWind()
-    {
-        if (isDisabled)
-        {
-            isDisabled = false;
-            isActive = true;
-            SetState(true);
-            timer = timeTurnedOn;
+            // Apagar
+            effector.enabled = false;
+            spriteRenderer.enabled = false;
+            yield return new WaitForSeconds(tiempoApagado);
         }
     }
 }

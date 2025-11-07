@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1460537416392782014}
   - component: {fileID: -6555993542278361774}
   - component: {fileID: 1116138228629344091}
+  - component: {fileID: 64314111792429949}
   m_Layer: 0
   m_Name: Wind
   m_TagString: Untagged
@@ -169,7 +170,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 812145795
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1369697953, guid: 3e60e76fe2d63f448af55377e8a23d04, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -182,6 +183,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &64314111792429949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6718636326420990930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91c566d26d1c42a49a5bbcd7e07b294b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Wind
+  effector: {fileID: 0}
+  tiempoEncendido: 5
+  tiempoApagado: 3
 --- !u!1 &8107894006581243588
 GameObject:
   m_ObjectHideFlags: 0
@@ -4985,7 +5001,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1937656689
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_RenderMode: 1
   m_MeshDistribution: 0
