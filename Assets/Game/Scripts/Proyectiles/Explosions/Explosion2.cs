@@ -28,7 +28,6 @@ public class Explosion2 : MonoBehaviour
     private IEnumerator ExplodeAfterDelay()
     {
         yield return new WaitForSeconds(delaySeconds);
-        ExplodeObject();
         Destroy(gameObject);
     }
 
@@ -48,7 +47,7 @@ public class Explosion2 : MonoBehaviour
 
     public void ExplodeTouch()
     {
-        ExplodeObject();
+        animator.SetBool("Exploded", true);
         Destroy(gameObject);
     }
 }
