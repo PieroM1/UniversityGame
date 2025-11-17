@@ -327,8 +327,8 @@ MonoBehaviour:
   ground: 0
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
-  spawnCheck: {fileID: 0}
+    m_Bits: 64
+  spawnCheck: {fileID: 4340089436317487490}
   boxDimensions: {x: 0.7, y: 0.1, z: 0}
 --- !u!1 &7980480313085824727
 GameObject:
