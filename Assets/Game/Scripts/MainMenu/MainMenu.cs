@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Button level4Button; //temporary
     public void Awake()
     {
-        AudioManager.Instance.ChangeBackgroundMusic(AudioConstants.MENU);
+        AudioManager.Instance.PlayBackgroundMusic(AudioConstants.MENU);
     }
 
     private void Start()
