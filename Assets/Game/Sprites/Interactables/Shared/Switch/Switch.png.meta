@@ -115,71 +115,84 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Switch_Normal
+      name: Switch_0
       rect:
         serializedVersion: 2
         x: 8
         y: 48
         width: 32
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 780d067718faea040800000000000000
-      internalID: 4660855634963517575
+      spriteID: 91205546e29c1644290350d428b11a8b
+      internalID: 2110635739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Switch_Pressed
+      name: Switch_1
       rect:
         serializedVersion: 2
         x: 8
         y: 35
         width: 32
         height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6712b5f777e315af0800000000000000
-      internalID: -409477408155295370
+      spriteID: e90ca61b41a13394592d72db953a017c
+      internalID: -1178852438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Switch_Frozen
+      name: Switch_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 48
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f48bf05081fe6b800800000000000000
-      internalID: 627952084507932751
+      spriteID: bc215e11620f1264da2454108d8f6cc8
+      internalID: -2027726016
       vertices: []
       indices: 
       edges: []
@@ -196,11 +209,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Switch_Frozen: 627952084507932751
-      Switch_Normal: 4660855634963517575
-      Switch_Pressed: -409477408155295370
+      Switch_0: 2110635739
+      Switch_1: -1178852438
+      Switch_2: -2027726016
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
