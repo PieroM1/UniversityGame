@@ -414,11 +414,13 @@ MonoBehaviour:
   - key: 0
     clip: {fileID: 8300000, guid: 578e87c37e803464ea1d51c69f3fb5db, type: 3}
   - key: 1
-    clip: {fileID: 8300000, guid: 61fb4ffc37a2b8c488b4f312a17b34ba, type: 3}
+    clip: {fileID: 8300000, guid: 017eb4891820b9d4cb3d44b5fa77c24a, type: 3}
   - key: 2
-    clip: {fileID: 8300000, guid: 38c34eae15bd948459b5cf068233d79b, type: 3}
+    clip: {fileID: 8300000, guid: 2732a89551d8fa44aaa8f8b0309d757c, type: 3}
   - key: 3
-    clip: {fileID: 8300000, guid: 38c34eae15bd948459b5cf068233d79b, type: 3}
+    clip: {fileID: 8300000, guid: 756f19424e9ede14d8fd8a22038f9458, type: 3}
+  - key: 4
+    clip: {fileID: 8300000, guid: 5dc3977967a9cf044939dbadfc351c01, type: 3}
   - key: 5
     clip: {fileID: 8300000, guid: 620062beffa55d348a9ef293e5729a1d, type: 3}
   soundEffects:
