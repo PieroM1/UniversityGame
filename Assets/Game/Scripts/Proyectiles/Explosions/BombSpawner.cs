@@ -13,6 +13,7 @@ public class BombSpawner : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform spawnCheck;
     [SerializeField] private Vector3 boxDimensions;
+    private InputAction bombAction;
 
     //CheckJump
     private PlayerMovement playerMovement;
@@ -22,12 +23,13 @@ public class BombSpawner : MonoBehaviour
     void Start()
     {
         playerMovement = GetComponentInParent<PlayerMovement>();
+        bombAction = InputSystem.actions.FindAction("Explosion");
     }
 
     private void Update()
     {
         bool canSpawn = currentBomb == null;
-        if (Mouse.current != null && Mouse.current.rightButton.wasPressedThisFrame && playerMovement.grounded == true && ground == false && canSpawn)
+        if (bombAction.WasPressedThisFrame() && playerMovement.grounded == true && ground == false && canSpawn)
         {
             currentBomb = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation);
         }

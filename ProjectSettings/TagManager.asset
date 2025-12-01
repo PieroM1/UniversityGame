@@ -53,11 +53,11 @@ TagManager:
   - name: Background
     uniqueID: 2997389665
     locked: 0
-  - name: Ground
-    uniqueID: 1695515855
-    locked: 0
   - name: Middleground
     uniqueID: 2744786003
+    locked: 0
+  - name: Ground
+    uniqueID: 1695515855
     locked: 0
   - name: Objects
     uniqueID: 812145795

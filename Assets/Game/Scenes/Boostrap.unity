@@ -449,7 +449,7 @@ MonoBehaviour:
   - key: 4
     clip: {fileID: 8300000, guid: db6ca3490154d8a43bb922dbd315e68f, type: 3}
   - key: 5
-    clip: {fileID: 8300000, guid: c7f76978bcfbd884c9260b686bc9bd70, type: 3}
+    clip: {fileID: 8300000, guid: e84462d196cc27e49b689f0ea82cf2e5, type: 3}
   - key: 6
     clip: {fileID: 8300000, guid: f45d19f3bdd18db4b9c16c05b7f3947d, type: 3}
   - key: 7
@@ -460,6 +460,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: b2410a4e14bdf0d48899603fcf951a29, type: 3}
   - key: 10
     clip: {fileID: 8300000, guid: 824f2193d12826140ae93a93e5244174, type: 3}
+  - key: 11
+    clip: {fileID: 8300000, guid: 21ddb8a245e65074eb66e27853951181, type: 3}
 --- !u!4 &705040456
 Transform:
   m_ObjectHideFlags: 0

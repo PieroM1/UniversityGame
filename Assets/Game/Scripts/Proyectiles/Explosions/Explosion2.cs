@@ -7,47 +7,59 @@ public class Explosion2 : MonoBehaviour
     [SerializeField] private float power = 800;
     [SerializeField] private float delaySeconds = 4f;
     private Animator animator;
+    private Collider2D col;
+
+    private bool exploded = false;
+    private Coroutine autoExplosionCoroutine;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        col = GetComponent<Collider2D>();
     }
 
     private void OnEnable()
     {
-        StartCoroutine(AnimateExplosion());
-        StartCoroutine(ExplodeAfterDelay());
+        autoExplosionCoroutine = StartCoroutine(AutoExplosion());
     }
 
-    private IEnumerator AnimateExplosion()
+    private IEnumerator AutoExplosion()
     {
         yield return new WaitForSeconds(delaySeconds - 0.5f);
-        animator.SetBool("Exploded", true);
-    }
+        TriggerExplosionAnimation();
 
-    private IEnumerator ExplodeAfterDelay()
-    {
-        yield return new WaitForSeconds(delaySeconds);
-        Destroy(gameObject);
-    }
-
-    void ExplodeObject()
-    {
-        Vector2 explosionPos = transform.position;
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(explosionPos, radius);
-        foreach (Collider2D collider in colliders)
-        {
-            Rigidbody2D rb2D = collider.GetComponent<Rigidbody2D>();
-            if (rb2D != null)
-            {
-                rb2D.AddExplosionForce(power, explosionPos, radius);
-            }
-        }
+        yield return new WaitForSeconds(0.5f);
+        FinishExplosion();
     }
 
     public void ExplodeTouch()
     {
+        if (exploded) return;
+
+        if (autoExplosionCoroutine != null)
+            StopCoroutine(autoExplosionCoroutine);
+
+        StartCoroutine(ManualExplosion());
+    }
+
+    private IEnumerator ManualExplosion()
+    {
+        TriggerExplosionAnimation();
+        yield return new WaitForSeconds(0.5f);
+        FinishExplosion();
+    }
+
+    private void TriggerExplosionAnimation()
+    {
+        if (exploded) return;
+        AudioManager.Instance.PlaySFX(SFXConstants.EXPLOSION);
+        exploded = true;
+        col.enabled = false;
         animator.SetBool("Exploded", true);
+    }
+
+    private void FinishExplosion()
+    {
         Destroy(gameObject);
     }
 }
