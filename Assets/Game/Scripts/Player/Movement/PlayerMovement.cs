@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
     private InputAction moveAction;
     private InputAction jumpAction;
     private InputAction dashAction;
-    private InputAction attackAction;
     //Movement parameters
     [SerializeField] private float speedX = 5f;
     [SerializeField] private float jumpForce = 7f;
@@ -27,12 +25,6 @@ public class PlayerMovement : MonoBehaviour
 
     //Bomb Spawner
     private Transform bombSpawnPosition;
-
-    //Attack Abilitity
-    private bool canUseAttackAbility = false;
-    private const float defaultAttackCooldown = 1f;
-    private float attackCooldown;
-    private float lastAttackTime = -Mathf.Infinity;
 
     //Dash Ability
     private bool canUseDashAbility = false;
@@ -56,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
         dashAction = InputSystem.actions.FindAction("Dash");
-        attackAction = InputSystem.actions.FindAction("Attack");
         dashDistance = defaultDashDistance;
         dashCooldown = defaultDashCooldown;
     }
@@ -74,7 +65,6 @@ public class PlayerMovement : MonoBehaviour
         if (jumpAction.WasPressedThisFrame() && grounded) Jump();
         else if (jumpAction.WasPressedThisFrame() && !grounded && maxJumpCount > 1) ExtraJump();
         if (dashAction.WasPressedThisFrame() && canUseDashAbility && Time.time >= lastDashTime + dashCooldown) Dash();
-        if (attackAction.WasPressedThisFrame() && canUseAttackAbility && Time.time >= lastAttackTime + attackCooldown) Attack();
         // Animator parameters
         animator.SetInteger("SpeedX", (int)move.x);
         animator.SetFloat("SpeedY", rb2D.linearVelocityY);
@@ -118,32 +108,6 @@ public class PlayerMovement : MonoBehaviour
     public void DisableMultipleJumps()
     {
         maxJumpCount = 1;
-    }
-    //Attack
-    private void Attack()
-    {
-        AudioManager.Instance.PlaySFX(SFXConstants.DAMAGE);
-        animator.SetBool("Attack", true);
-        lastAttackTime = Time.time;
-    }
-    private void EnableAttackHitbox()
-    {
-        //Todo: Enable attack hitbox
-    }
-    private void DisableAttackHitbox()
-    {
-        //Todo: Disable attack hitbox
-        animator.SetBool("Attack", false);
-    }
-
-
-    public void EnableAttackAbility()
-    {
-        canUseAttackAbility = true;
-    }
-    public void DisableAttackAbility()
-    {
-        canUseAttackAbility = false;
     }
     //Dash
     private void Dash()

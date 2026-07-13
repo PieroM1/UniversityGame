@@ -10,5 +10,6 @@ public enum SFXConstants
     SPRING,
     EMERALD_COLLECT,
     PERFECT,
-    DASH
+    DASH,
+    SWITCH
 }

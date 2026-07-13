@@ -46,7 +46,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void ChangeBackgroundMusic(AudioConstants backgroundName)
+    public void PlayBackgroundMusic(AudioConstants backgroundName)
     {
         if (musicDict.ContainsKey(backgroundName))
         {
@@ -54,30 +54,6 @@ public class AudioManager : MonoBehaviour
             musicSource.Play();
         }
     }
-
-    public IEnumerator Crossfade(AudioClip newClip, float duration = 1f)
-    {
-        float startVolume = musicSource.volume;
-
-        // Fade out
-        while (musicSource.volume > 0)
-        {
-            musicSource.volume -= startVolume * Time.deltaTime / duration;
-            yield return null;
-        }
-
-        musicSource.Stop();
-        musicSource.clip = newClip;
-        musicSource.Play();
-
-        // Fade in
-        while (musicSource.volume < startVolume)
-        {
-            musicSource.volume += startVolume * Time.deltaTime / duration;
-            yield return null;
-        }
-    }
-
     public void StopBackgroundMusic() => musicSource.Stop();
 
     public void PlaySFX(SFXConstants key)

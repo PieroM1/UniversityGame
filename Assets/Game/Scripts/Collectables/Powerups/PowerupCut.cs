@@ -8,21 +8,22 @@ public class PowerupCut : PowerupData
 
     public override void ApplyEffect(GameObject pl)
     {
+        /*
         if (pl.TryGetComponent<PlayerMovement>(out var player))
         {
             player.EnableAttackAbility();
             var powerup = player.GetComponent<PlayerOutfit>();
             powerup.ApplyOutfit(outfit);
-        }
+        }*/
     }
 
     public override void RemoveEffect(GameObject pl)
-    {
+    {/*
         if (pl.TryGetComponent<PlayerMovement>(out var player))
         {
             player.DisableAttackAbility();
             var powerup = player.GetComponent<PlayerOutfit>();
             powerup.ResetOutfit();
-        }
+        }*/
     }
 }

@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        AudioManager.Instance.ChangeBackgroundMusic(backgroundMusic);
+        AudioManager.Instance.PlayBackgroundMusic(backgroundMusic);
         collectedEmeralds = 0;
         UIManager.Instance.ShowHUD(true);
         var camera = FindFirstObjectByType<Camera>();
